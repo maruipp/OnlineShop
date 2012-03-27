@@ -11,21 +11,106 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-
+@synthesize rootTabBarController = _rootTabBarController;
 - (void)dealloc
 {
     [_window release];
     [super dealloc];
 }
 
+#pragma mark - init table bar controller
+- (void)initTabBarController
+{
+    ShouYeController * shouYeCtr = [[[ShouYeController alloc] initWithNibName:nil bundle:nil] autorelease];
+    UINavigationController * shouYeNvg = [[[UINavigationController alloc] initWithRootViewController:shouYeCtr] autorelease];
+//    ZKCompanyCenterController * companyCtr = [[[ZKCompanyCenterController alloc] initWithNibName:nil bundle:nil] autorelease];
+//    ZKOrderCenterController * orderCtr =[[[ZKOrderCenterController alloc] initWithNibName:nil bundle:nil] autorelease];
+//    ZKRewardController * rewardCtr = [[[ZKRewardController alloc] initWithNibName:nil bundle:nil] autorelease];
+//    ZKAccountCenterController * accountCtr = [[[ZKAccountCenterController alloc] initWithNibName:nil bundle:nil] autorelease];
+    
+    NSArray* controllers = [NSArray arrayWithObjects:
+                            shouYeNvg, 
+                            shouYeNvg,
+                            shouYeNvg,
+                            shouYeNvg,
+                            shouYeNvg, 
+                            nil];
+    _rootTabBarController = [[RootTabBarController alloc] init];
+    _rootTabBarController.viewControllers = controllers;
+    
+    
+    _rootTabBarController.selectedIndex = 0;
+    [self.window addSubview:_rootTabBarController.view];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self addNotificationToCenter];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self initTabBarController];
     return YES;
 }
+
+#pragma mark - init notification center
+- (void) addNotificationToCenter
+{
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(successLogin) name:NOTIFICATION_LOGIN_SUCCESS object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabBar) name:NOTIFICATION_SHOW_TABBAR object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabBar) name:NOTIFICATION_HIDE_TABBAR object:nil];
+}
+
+#pragma mark - manage tabbar
+- (void) hideTabBar{
+    
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.5];
+    for(UIView *view in _rootTabBarController.view.subviews)
+    {
+        if([view isKindOfClass:[UITabBar class]])
+        {
+            [view setFrame:CGRectMake(view.frame.origin.x, 480, view.frame.size.width, view.frame.size.height)];
+        } 
+        else 
+        {
+            [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, 480)];
+        }
+        
+    }
+    
+    [UIView commitAnimations];
+    
+}
+
+- (void) showTabBar{
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.5];
+    for(UIView *view in _rootTabBarController.view.subviews)
+    {
+        NSLog(@"%@", view);
+        
+        if([view isKindOfClass:[UITabBar class]])
+        {
+            [view setFrame:CGRectMake(view.frame.origin.x, 431, view.frame.size.width, view.frame.size.height)];
+            
+        } 
+        else 
+        {
+            [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, 431)];
+        }
+        
+        
+    }
+    
+    [UIView commitAnimations]; 
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
