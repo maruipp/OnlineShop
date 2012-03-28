@@ -1,21 +1,36 @@
 //
-//  ShouYeController.m
+//  TGModuleHomeController.m
 //  OnlineShop
 //
-//  Created by 瑞鹏 马 on 12-3-27.
+//  Created by 瑞鹏 马 on 12-3-28.
 //  Copyright (c) 2012年 BJTU. All rights reserved.
 //
 
-#import "ShouYeController.h"
+#import "TGModuleHomeController.h"
 
-@implementation ShouYeController
+@implementation TGModuleHomeController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        NSString * classStr = NSStringFromClass([self class]);
+        CLog(@"%@", classStr);
+        NSDictionary * configsDic = PLIST_CONFIGS;
+        NSDictionary * myConfigDic = [configsDic objectForKey:classStr];
+        //tabbar data
+        NSDictionary * tabBarDic = [myConfigDic objectForKey:@"TabBar"];
+        NSString * tabBarTitle = [tabBarDic objectForKey:@"Title"];
+        NSString * tabBarImage = [tabBarDic objectForKey:@"Image"];
+        NSNumber * tabBarTag = [tabBarDic objectForKey:@"Tag"];
+        //navigation bar data
+        NSDictionary * nvgDic = [myConfigDic objectForKey:@"NavigationBar"];
+        NSString * nvgTitle = [nvgDic objectForKey:@"Title"];
         
+        self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:tabBarTitle image:[UIImage imageNamed:tabBarImage] tag:[tabBarTag intValue]] autorelease];
+        
+        self.navigationItem.title = nvgTitle;
     }
     return self;
 }

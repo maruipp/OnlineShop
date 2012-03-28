@@ -1,21 +1,20 @@
 //
-//  ShouYeController.m
+//  MyFankeController.m
 //  OnlineShop
 //
-//  Created by 瑞鹏 马 on 12-3-27.
+//  Created by 瑞鹏 马 on 12-3-28.
 //  Copyright (c) 2012年 BJTU. All rights reserved.
 //
 
-#import "ShouYeController.h"
+#import "MyFankeController.h"
 
-@implementation ShouYeController
+@implementation MyFankeController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        
+       
     }
     return self;
 }

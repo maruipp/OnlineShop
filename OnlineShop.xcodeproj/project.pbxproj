@@ -70,6 +70,13 @@
 		1F03C7B915221153006DB786 /* guide_tmall_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F03C7AD15221153006DB786 /* guide_tmall_on.png */; };
 		1F03C7BA15221153006DB786 /* guide_ww_nm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F03C7AE15221153006DB786 /* guide_ww_nm.png */; };
 		1F03C7BB15221153006DB786 /* guide_ww_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F03C7AF15221153006DB786 /* guide_ww_on.png */; };
+		1F046B0B15234A0400129B8F /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B0A15234A0400129B8F /* TGViewController.m */; };
+		1F046B1415234BDC00129B8F /* ClassificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B1315234BDC00129B8F /* ClassificationController.m */; };
+		1F046B1715234C0300129B8F /* ShopCarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B1615234C0300129B8F /* ShopCarController.m */; };
+		1F046B1A15234C1100129B8F /* MyFankeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B1915234C1100129B8F /* MyFankeController.m */; };
+		1F046B1D15234C2400129B8F /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B1C15234C2400129B8F /* MoreController.m */; };
+		1F046B1F15234E7100129B8F /* Configs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F046B1E15234E7100129B8F /* Configs.plist */; };
+		1F046B22152351C900129B8F /* TGModuleHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B21152351C900129B8F /* TGModuleHomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -187,6 +194,20 @@
 		1F03C7AD15221153006DB786 /* guide_tmall_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_tmall_on.png; sourceTree = "<group>"; };
 		1F03C7AE15221153006DB786 /* guide_ww_nm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_ww_nm.png; sourceTree = "<group>"; };
 		1F03C7AF15221153006DB786 /* guide_ww_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_ww_on.png; sourceTree = "<group>"; };
+		1F046B0915234A0400129B8F /* TGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TGViewController.h; path = Custom/TGViewController.h; sourceTree = "<group>"; };
+		1F046B0A15234A0400129B8F /* TGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGViewController.m; path = Custom/TGViewController.m; sourceTree = "<group>"; };
+		1F046B0C15234A2D00129B8F /* TopgetherHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopgetherHeader.h; sourceTree = "<group>"; };
+		1F046B1215234BDC00129B8F /* ClassificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationController.h; sourceTree = "<group>"; };
+		1F046B1315234BDC00129B8F /* ClassificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificationController.m; sourceTree = "<group>"; };
+		1F046B1515234C0300129B8F /* ShopCarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarController.h; sourceTree = "<group>"; };
+		1F046B1615234C0300129B8F /* ShopCarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarController.m; sourceTree = "<group>"; };
+		1F046B1815234C1100129B8F /* MyFankeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFankeController.h; sourceTree = "<group>"; };
+		1F046B1915234C1100129B8F /* MyFankeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFankeController.m; sourceTree = "<group>"; };
+		1F046B1B15234C2400129B8F /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreController.h; sourceTree = "<group>"; };
+		1F046B1C15234C2400129B8F /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreController.m; sourceTree = "<group>"; };
+		1F046B1E15234E7100129B8F /* Configs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configs.plist; sourceTree = "<group>"; };
+		1F046B20152351C900129B8F /* TGModuleHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGModuleHomeController.h; sourceTree = "<group>"; };
+		1F046B21152351C900129B8F /* TGModuleHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGModuleHomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,13 +264,12 @@
 		1F03C6591521F33D006DB786 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				1F046B07152349A600129B8F /* Topgether */,
 				1F03C70B1522026D006DB786 /* Common */,
 				1F03C71E1522026D006DB786 /* Public */,
 				1F03C7201522026D006DB786 /* Tools */,
-				1F03C78C15220C9B006DB786 /* ShouYe */,
 				1F03C66F1521F8B5006DB786 /* Root */,
-				1F03C6621521F33D006DB786 /* AppDelegate.h */,
-				1F03C6631521F33D006DB786 /* AppDelegate.m */,
+				1F046B0D15234ACF00129B8F /* Modules */,
 				1F03C65A1521F33D006DB786 /* Supporting Files */,
 			);
 			path = OnlineShop;
@@ -263,6 +283,7 @@
 				1F03C65C1521F33D006DB786 /* InfoPlist.strings */,
 				1F03C65F1521F33D006DB786 /* main.m */,
 				1F03C6611521F33D006DB786 /* OnlineShop-Prefix.pch */,
+				1F046B1E15234E7100129B8F /* Configs.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -272,6 +293,8 @@
 			children = (
 				1F03C6701521F8C7006DB786 /* RootTabBarController.h */,
 				1F03C6711521F8C7006DB786 /* RootTabBarController.m */,
+				1F03C6621521F33D006DB786 /* AppDelegate.h */,
+				1F03C6631521F33D006DB786 /* AppDelegate.m */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -515,6 +538,66 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		1F046B07152349A600129B8F /* Topgether */ = {
+			isa = PBXGroup;
+			children = (
+				1F046B0915234A0400129B8F /* TGViewController.h */,
+				1F046B0A15234A0400129B8F /* TGViewController.m */,
+				1F046B0C15234A2D00129B8F /* TopgetherHeader.h */,
+				1F046B20152351C900129B8F /* TGModuleHomeController.h */,
+				1F046B21152351C900129B8F /* TGModuleHomeController.m */,
+			);
+			name = Topgether;
+			sourceTree = "<group>";
+		};
+		1F046B0D15234ACF00129B8F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1F03C78C15220C9B006DB786 /* ShouYe */,
+				1F046B1115234B0600129B8F /* Classification */,
+				1F046B1015234B0400129B8F /* ShopCar */,
+				1F046B0F15234B0200129B8F /* MyFanke */,
+				1F046B0E15234AFF00129B8F /* More */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		1F046B0E15234AFF00129B8F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				1F046B1B15234C2400129B8F /* MoreController.h */,
+				1F046B1C15234C2400129B8F /* MoreController.m */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		1F046B0F15234B0200129B8F /* MyFanke */ = {
+			isa = PBXGroup;
+			children = (
+				1F046B1815234C1100129B8F /* MyFankeController.h */,
+				1F046B1915234C1100129B8F /* MyFankeController.m */,
+			);
+			name = MyFanke;
+			sourceTree = "<group>";
+		};
+		1F046B1015234B0400129B8F /* ShopCar */ = {
+			isa = PBXGroup;
+			children = (
+				1F046B1515234C0300129B8F /* ShopCarController.h */,
+				1F046B1615234C0300129B8F /* ShopCarController.m */,
+			);
+			name = ShopCar;
+			sourceTree = "<group>";
+		};
+		1F046B1115234B0600129B8F /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				1F046B1215234BDC00129B8F /* ClassificationController.h */,
+				1F046B1315234BDC00129B8F /* ClassificationController.m */,
+			);
+			name = Classification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -579,6 +662,7 @@
 				1F03C7B915221153006DB786 /* guide_tmall_on.png in Resources */,
 				1F03C7BA15221153006DB786 /* guide_ww_nm.png in Resources */,
 				1F03C7BB15221153006DB786 /* guide_ww_on.png in Resources */,
+				1F046B1F15234E7100129B8F /* Configs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +713,12 @@
 				1F03C78A1522026D006DB786 /* SBJsonWriter.m in Sources */,
 				1F03C78B1522026D006DB786 /* NSString+URLEncoding.m in Sources */,
 				1F03C78F15220D48006DB786 /* ShouYeController.m in Sources */,
+				1F046B0B15234A0400129B8F /* TGViewController.m in Sources */,
+				1F046B1415234BDC00129B8F /* ClassificationController.m in Sources */,
+				1F046B1715234C0300129B8F /* ShopCarController.m in Sources */,
+				1F046B1A15234C1100129B8F /* MyFankeController.m in Sources */,
+				1F046B1D15234C2400129B8F /* MoreController.m in Sources */,
+				1F046B22152351C900129B8F /* TGModuleHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +824,7 @@
 				1F03C6691521F33D006DB786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "RootTabBarController.h"
 #import "ShouYeController.h"
+#import "ClassificationController.h"
+#import "ShopCarController.h"
+#import "MyFankeController.h"
+#import "MoreController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

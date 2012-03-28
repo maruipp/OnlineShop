@@ -23,17 +23,21 @@
 {
     ShouYeController * shouYeCtr = [[[ShouYeController alloc] initWithNibName:nil bundle:nil] autorelease];
     UINavigationController * shouYeNvg = [[[UINavigationController alloc] initWithRootViewController:shouYeCtr] autorelease];
-//    ZKCompanyCenterController * companyCtr = [[[ZKCompanyCenterController alloc] initWithNibName:nil bundle:nil] autorelease];
-//    ZKOrderCenterController * orderCtr =[[[ZKOrderCenterController alloc] initWithNibName:nil bundle:nil] autorelease];
-//    ZKRewardController * rewardCtr = [[[ZKRewardController alloc] initWithNibName:nil bundle:nil] autorelease];
-//    ZKAccountCenterController * accountCtr = [[[ZKAccountCenterController alloc] initWithNibName:nil bundle:nil] autorelease];
+    ClassificationController * classificationCtr = [[[ClassificationController alloc] initWithNibName:nil bundle:nil] autorelease];
+    UINavigationController * classificationNvg = [[[UINavigationController alloc] initWithRootViewController:classificationCtr] autorelease];
+    ShopCarController * shopCarCtr =[[[ShopCarController alloc] initWithNibName:nil bundle:nil] autorelease];
+    UINavigationController * shopCarNvg = [[[UINavigationController alloc] initWithRootViewController:shopCarCtr] autorelease];
+    MyFankeController * myFankeCtr = [[[MyFankeController alloc] initWithNibName:nil bundle:nil] autorelease];
+    UINavigationController * myFankeNvg = [[[UINavigationController alloc] initWithRootViewController:myFankeCtr] autorelease];
+    MoreController * moreCtr = [[[MoreController alloc] initWithNibName:nil bundle:nil] autorelease];
+    UINavigationController * moreNvg = [[[UINavigationController alloc] initWithRootViewController:moreCtr] autorelease];
     
     NSArray* controllers = [NSArray arrayWithObjects:
                             shouYeNvg, 
-                            shouYeNvg,
-                            shouYeNvg,
-                            shouYeNvg,
-                            shouYeNvg, 
+                            classificationNvg,
+                            shopCarNvg,
+                            myFankeNvg,
+                            moreNvg, 
                             nil];
     _rootTabBarController = [[RootTabBarController alloc] init];
     _rootTabBarController.viewControllers = controllers;

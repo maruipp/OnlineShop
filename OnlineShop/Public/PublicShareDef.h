@@ -48,7 +48,9 @@
 #define NOTIFICATION_HIDE_TABBAR                        @"GLOBAL_HIDE_TABBAR"
 //菜单数据
 #define MENU_DICTIONARY [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Menu.plist" ofType:nil]]
+#define List_ITEM_CONFIG [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Menu.plist" ofType:nil]]
+
 //list数据  
-#define List_ITEM_CONFIG [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ListConfig.plist" ofType:nil]]
+#define PLIST_CONFIGS [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Configs.plist" ofType:nil]]
 
 #endif

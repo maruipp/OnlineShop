@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShouYeController : UIViewController
+@interface ShouYeController : TGModuleHomeController
 
 @end
