@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ShouYeController : TGModuleHomeController
-
+#import "ImageScrollView.h"
+#import "PublicShareDef.h"
+@interface ShouYeController : TGModuleHomeController <UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
+{
+    ImageScrollView * detailScrollView;
+    UITableView * detailTableView;
+    NSMutableArray * dataArray;
+}
+- (void) readData;
 @end

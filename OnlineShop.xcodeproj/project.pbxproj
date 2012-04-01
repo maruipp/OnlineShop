@@ -77,6 +77,23 @@
 		1F046B1D15234C2400129B8F /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B1C15234C2400129B8F /* MoreController.m */; };
 		1F046B1F15234E7100129B8F /* Configs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F046B1E15234E7100129B8F /* Configs.plist */; };
 		1F046B22152351C900129B8F /* TGModuleHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F046B21152351C900129B8F /* TGModuleHomeController.m */; };
+		1F0571D71528825D00BCE094 /* ImageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0571D61528825D00BCE094 /* ImageListController.m */; };
+		1F0571DE1528892C00BCE094 /* IMG_0395.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1F0571DD1528892C00BCE094 /* IMG_0395.PNG */; };
+		1F0571E11528977000BCE094 /* GenralInfoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0571E01528977000BCE094 /* GenralInfoListController.m */; };
+		1F0571E61528983D00BCE094 /* GeneralInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0571E51528983D00BCE094 /* GeneralInfoCell.m */; };
+		1F0571E815289BC900BCE094 /* IMG_0399.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1F0571E715289BC900BCE094 /* IMG_0399.PNG */; };
+		1FE446331524953C005AA82B /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE446321524953C005AA82B /* ImageScrollView.m */; };
+		1FE4463615249E8A005AA82B /* IMG_0579.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463515249E8A005AA82B /* IMG_0579.PNG */; };
+		1FE4463815249F96005AA82B /* IMG_0582.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463715249F96005AA82B /* IMG_0582.PNG */; };
+		1FE4463C1524AF7B005AA82B /* scroll3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FE446391524AF7B005AA82B /* scroll3.jpg */; };
+		1FE4463D1524AF7B005AA82B /* scroll2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463A1524AF7B005AA82B /* scroll2.jpg */; };
+		1FE4463E1524AF7B005AA82B /* scroll1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463B1524AF7B005AA82B /* scroll1.jpg */; };
+		1FE747D3152747C500031C95 /* TGTextFieldNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */; };
+		1FE747D4152747C500031C95 /* TGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CB152747C500031C95 /* TGLabel.m */; };
+		1FE747D5152747C500031C95 /* TGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CD152747C500031C95 /* TGTableViewCell.m */; };
+		1FE747D6152747C500031C95 /* TGTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CF152747C500031C95 /* TGTableView.m */; };
+		1FE747D7152747C500031C95 /* TGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747D1152747C500031C95 /* TGView.m */; };
+		1FE747DF15274EDD00031C95 /* ZKQuickButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,6 +225,34 @@
 		1F046B1E15234E7100129B8F /* Configs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configs.plist; sourceTree = "<group>"; };
 		1F046B20152351C900129B8F /* TGModuleHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGModuleHomeController.h; sourceTree = "<group>"; };
 		1F046B21152351C900129B8F /* TGModuleHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGModuleHomeController.m; sourceTree = "<group>"; };
+		1F0571D51528825D00BCE094 /* ImageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListController.h; sourceTree = "<group>"; };
+		1F0571D61528825D00BCE094 /* ImageListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListController.m; sourceTree = "<group>"; };
+		1F0571DD1528892C00BCE094 /* IMG_0395.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0395.PNG; sourceTree = "<group>"; };
+		1F0571DF1528977000BCE094 /* GenralInfoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenralInfoListController.h; path = OnlineShop/GenralInfoListController.h; sourceTree = SOURCE_ROOT; };
+		1F0571E01528977000BCE094 /* GenralInfoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenralInfoListController.m; path = OnlineShop/GenralInfoListController.m; sourceTree = SOURCE_ROOT; };
+		1F0571E41528983D00BCE094 /* GeneralInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralInfoCell.h; sourceTree = "<group>"; };
+		1F0571E51528983D00BCE094 /* GeneralInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralInfoCell.m; sourceTree = "<group>"; };
+		1F0571E715289BC900BCE094 /* IMG_0399.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0399.PNG; sourceTree = "<group>"; };
+		1FE446311524953C005AA82B /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		1FE446321524953C005AA82B /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
+		1FE4463515249E8A005AA82B /* IMG_0579.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0579.PNG; path = Resource/IMG_0579.PNG; sourceTree = "<group>"; };
+		1FE4463715249F96005AA82B /* IMG_0582.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0582.PNG; sourceTree = "<group>"; };
+		1FE446391524AF7B005AA82B /* scroll3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scroll3.jpg; sourceTree = "<group>"; };
+		1FE4463A1524AF7B005AA82B /* scroll2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scroll2.jpg; sourceTree = "<group>"; };
+		1FE4463B1524AF7B005AA82B /* scroll1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scroll1.jpg; sourceTree = "<group>"; };
+		1FE747C8152747C500031C95 /* TGTextFieldNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTextFieldNotificationCenter.h; sourceTree = "<group>"; };
+		1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTextFieldNotificationCenter.m; sourceTree = "<group>"; };
+		1FE747CA152747C500031C95 /* TGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLabel.h; sourceTree = "<group>"; };
+		1FE747CB152747C500031C95 /* TGLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLabel.m; sourceTree = "<group>"; };
+		1FE747CC152747C500031C95 /* TGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTableViewCell.h; sourceTree = "<group>"; };
+		1FE747CD152747C500031C95 /* TGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTableViewCell.m; sourceTree = "<group>"; };
+		1FE747CE152747C500031C95 /* TGTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTableView.h; sourceTree = "<group>"; };
+		1FE747CF152747C500031C95 /* TGTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTableView.m; sourceTree = "<group>"; };
+		1FE747D0152747C500031C95 /* TGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGView.h; sourceTree = "<group>"; };
+		1FE747D1152747C500031C95 /* TGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGView.m; sourceTree = "<group>"; };
+		1FE747D2152747C500031C95 /* TGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTextField.h; sourceTree = "<group>"; };
+		1FE747DD15274EDD00031C95 /* ZKQuickButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKQuickButtonView.h; sourceTree = "<group>"; };
+		1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKQuickButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +323,13 @@
 		1F03C65A1521F33D006DB786 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FE4463515249E8A005AA82B /* IMG_0579.PNG */,
+				1FE4463715249F96005AA82B /* IMG_0582.PNG */,
+				1FE446391524AF7B005AA82B /* scroll3.jpg */,
+				1FE4463A1524AF7B005AA82B /* scroll2.jpg */,
+				1FE4463B1524AF7B005AA82B /* scroll1.jpg */,
+				1F0571DD1528892C00BCE094 /* IMG_0395.PNG */,
+				1F0571E715289BC900BCE094 /* IMG_0399.PNG */,
 				1F03C7A315221153006DB786 /* Resource */,
 				1F03C65B1521F33D006DB786 /* OnlineShop-Info.plist */,
 				1F03C65C1521F33D006DB786 /* InfoPlist.strings */,
@@ -484,8 +536,8 @@
 		1F03C78C15220C9B006DB786 /* ShouYe */ = {
 			isa = PBXGroup;
 			children = (
-				1F03C78D15220D48006DB786 /* ShouYeController.h */,
-				1F03C78E15220D48006DB786 /* ShouYeController.m */,
+				1FE747E01527504A00031C95 /* home */,
+				1FE747E11527505700031C95 /* detail */,
 			);
 			name = ShouYe;
 			path = Tools;
@@ -546,6 +598,17 @@
 				1F046B0C15234A2D00129B8F /* TopgetherHeader.h */,
 				1F046B20152351C900129B8F /* TGModuleHomeController.h */,
 				1F046B21152351C900129B8F /* TGModuleHomeController.m */,
+				1FE747C8152747C500031C95 /* TGTextFieldNotificationCenter.h */,
+				1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */,
+				1FE747CA152747C500031C95 /* TGLabel.h */,
+				1FE747CB152747C500031C95 /* TGLabel.m */,
+				1FE747CC152747C500031C95 /* TGTableViewCell.h */,
+				1FE747CD152747C500031C95 /* TGTableViewCell.m */,
+				1FE747CE152747C500031C95 /* TGTableView.h */,
+				1FE747CF152747C500031C95 /* TGTableView.m */,
+				1FE747D0152747C500031C95 /* TGView.h */,
+				1FE747D1152747C500031C95 /* TGView.m */,
+				1FE747D2152747C500031C95 /* TGTextField.h */,
 			);
 			name = Topgether;
 			sourceTree = "<group>";
@@ -596,6 +659,48 @@
 				1F046B1315234BDC00129B8F /* ClassificationController.m */,
 			);
 			name = Classification;
+			sourceTree = "<group>";
+		};
+		1F0571E2152897EE00BCE094 /* GeneralInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F0571DF1528977000BCE094 /* GenralInfoListController.h */,
+				1F0571E01528977000BCE094 /* GenralInfoListController.m */,
+				1F0571E41528983D00BCE094 /* GeneralInfoCell.h */,
+				1F0571E51528983D00BCE094 /* GeneralInfoCell.m */,
+			);
+			name = GeneralInfo;
+			sourceTree = "<group>";
+		};
+		1F0571E31528980C00BCE094 /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				1FE747DD15274EDD00031C95 /* ZKQuickButtonView.h */,
+				1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */,
+				1F0571D51528825D00BCE094 /* ImageListController.h */,
+				1F0571D61528825D00BCE094 /* ImageListController.m */,
+			);
+			name = ImageList;
+			sourceTree = "<group>";
+		};
+		1FE747E01527504A00031C95 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				1F03C78D15220D48006DB786 /* ShouYeController.h */,
+				1F03C78E15220D48006DB786 /* ShouYeController.m */,
+				1FE446311524953C005AA82B /* ImageScrollView.h */,
+				1FE446321524953C005AA82B /* ImageScrollView.m */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		1FE747E11527505700031C95 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F0571E31528980C00BCE094 /* ImageList */,
+				1F0571E2152897EE00BCE094 /* GeneralInfo */,
+			);
+			name = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,6 +768,13 @@
 				1F03C7BA15221153006DB786 /* guide_ww_nm.png in Resources */,
 				1F03C7BB15221153006DB786 /* guide_ww_on.png in Resources */,
 				1F046B1F15234E7100129B8F /* Configs.plist in Resources */,
+				1FE4463615249E8A005AA82B /* IMG_0579.PNG in Resources */,
+				1FE4463815249F96005AA82B /* IMG_0582.PNG in Resources */,
+				1FE4463C1524AF7B005AA82B /* scroll3.jpg in Resources */,
+				1FE4463D1524AF7B005AA82B /* scroll2.jpg in Resources */,
+				1FE4463E1524AF7B005AA82B /* scroll1.jpg in Resources */,
+				1F0571DE1528892C00BCE094 /* IMG_0395.PNG in Resources */,
+				1F0571E815289BC900BCE094 /* IMG_0399.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +831,16 @@
 				1F046B1A15234C1100129B8F /* MyFankeController.m in Sources */,
 				1F046B1D15234C2400129B8F /* MoreController.m in Sources */,
 				1F046B22152351C900129B8F /* TGModuleHomeController.m in Sources */,
+				1FE446331524953C005AA82B /* ImageScrollView.m in Sources */,
+				1FE747D3152747C500031C95 /* TGTextFieldNotificationCenter.m in Sources */,
+				1FE747D4152747C500031C95 /* TGLabel.m in Sources */,
+				1FE747D5152747C500031C95 /* TGTableViewCell.m in Sources */,
+				1FE747D6152747C500031C95 /* TGTableView.m in Sources */,
+				1FE747D7152747C500031C95 /* TGView.m in Sources */,
+				1FE747DF15274EDD00031C95 /* ZKQuickButtonView.m in Sources */,
+				1F0571D71528825D00BCE094 /* ImageListController.m in Sources */,
+				1F0571E11528977000BCE094 /* GenralInfoListController.m in Sources */,
+				1F0571E61528983D00BCE094 /* GeneralInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

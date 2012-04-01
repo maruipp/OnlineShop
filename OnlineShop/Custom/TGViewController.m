@@ -10,15 +10,92 @@
 
 @implementation TGViewController
 
+- (void) dealloc
+{
+    [progress_ removeFromSuperview];  
+    [progress_ release];  
+    [dataArray release];
+    [super dealloc];
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [self readData:0];
     }
     return self;
 }
 
+- (void) readData:(int) index
+{
+    [self initProgressHD];
+    network = [[MRPNetwork alloc] initWithTarget:self action:@selector(getReturnValue:obj:)];
+}
+
+-(void)getReturnValue:(MRPNetwork *)sender obj:(NSDictionary *)obj
+{
+    [self hiddenProgress];
+    //若网络请求已经返回，则将network置为nil（因为此时network已被释放，其已成为野指针）
+    network = nil;
+    
+    CLog(@"getReturnValue");
+    //判断是否出错
+    if (sender.hasError||obj==nil) {
+        [sender alert];
+        return;
+    }
+}
+
+#pragma mark - 状态条
+-(void)initProgressHD{
+    
+    //    progressView = [[[UIView alloc] initWithFrame:COMMON_DETAIL_VIEW_RECT] autorelease];
+    //    [self.view addSubview:progressView];
+    //progressView.hidden = YES;
+    //progressView.backgroundColor = [UIColor yellowColor];
+    
+    //[self.view bringSubviewToFront:progressView];
+    progress_ = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:progress_];
+    progress_.delegate = self;
+    //[progressView bringSubviewToFront:progress_];  
+    [progress_ show:YES];  
+}
+#pragma mark - MBProgressHD delegate methods
+- (void)hudWasHidden:(MBProgressHUD *)hud   
+{  
+    CLog(@"Hud: %@", hud);  
+    // Remove HUD from screen when the HUD was hidded  
+    [progress_ removeFromSuperview];  
+    [progress_ release];  
+    progress_ = nil;  
+    
+    //    [progressView removeFromSuperview];
+    //    progressView = nil;
+}  
+
+
+-(void)hiddenProgress{
+    if (progress_)   
+    {  
+        [progress_ removeFromSuperview];  
+        [progress_ release];  
+        progress_ = nil;  
+        
+        //        [progressView removeFromSuperview];
+        //        progressView = nil;
+    }  
+}
+
+#pragma mark - 页面切换时停止网络请求
+- (void) viewDidDisappear:(BOOL)animated
+{
+    [network stopHttpRequest];
+}
+
+
+#pragma mark -
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.

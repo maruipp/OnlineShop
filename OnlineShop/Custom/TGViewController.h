@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TGViewController : UIViewController
-
+#import "MRPNetwork.h"
+#import "MBProgressHUD.h"
+@interface TGViewController : UIViewController<MBProgressHUDDelegate>
+{
+    MBProgressHUD * progress_;
+    //UIView * progressView;  //供进度条定位用
+    NSMutableArray * dataArray;
+    MRPNetwork * network;
+}
+#pragma mark - 进度条管理
+- (void)initProgressHD;
+- (void)hiddenProgress;
+- (void) readData:(int) index;
+-(void)getReturnValue:(MRPNetwork *)sender obj:(NSDictionary *)obj;
 @end

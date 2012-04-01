@@ -24,16 +24,16 @@
 		<key>TabBar</key>
 		<dict>
 			<key>Title</key>
-			<string>首页</string>
+			<string>分类</string>
 			<key>Image</key>
-			<string>guide_home_on.png</string>
+			<string>guide_ju_on.png</string>
 			<key>Tag</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>NavigationBar</key>
 		<dict>
 			<key>Title</key>
-			<string>凡客诚品</string>
+			<string>分类浏览</string>
 		</dict>
 	</dict>
 	<key>ShopCarController</key>
@@ -41,16 +41,16 @@
 		<key>TabBar</key>
 		<dict>
 			<key>Title</key>
-			<string>首页</string>
+			<string>购物车</string>
 			<key>Image</key>
-			<string>guide_home_on.png</string>
+			<string>guide_cart_on.png</string>
 			<key>Tag</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>NavigationBar</key>
 		<dict>
 			<key>Title</key>
-			<string>凡客诚品</string>
+			<string>购物车</string>
 		</dict>
 	</dict>
 	<key>MyFankeController</key>
@@ -58,16 +58,16 @@
 		<key>TabBar</key>
 		<dict>
 			<key>Title</key>
-			<string>首页</string>
+			<string>我的凡客</string>
 			<key>Image</key>
-			<string>guide_home_on.png</string>
+			<string>guide_logistics_on.png</string>
 			<key>Tag</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<key>NavigationBar</key>
 		<dict>
 			<key>Title</key>
-			<string>凡客诚品</string>
+			<string>我的凡客</string>
 		</dict>
 	</dict>
 	<key>MoreController</key>
@@ -75,16 +75,16 @@
 		<key>TabBar</key>
 		<dict>
 			<key>Title</key>
-			<string>首页</string>
+			<string>更多</string>
 			<key>Image</key>
-			<string>guide_home_on.png</string>
+			<string>guide_tmall_on</string>
 			<key>Tag</key>
-			<integer>0</integer>
+			<integer>4</integer>
 		</dict>
 		<key>NavigationBar</key>
 		<dict>
 			<key>Title</key>
-			<string>凡客诚品</string>
+			<string>更多</string>
 		</dict>
 	</dict>
 </dict>

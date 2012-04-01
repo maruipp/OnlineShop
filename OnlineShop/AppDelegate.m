@@ -32,6 +32,11 @@
     MoreController * moreCtr = [[[MoreController alloc] initWithNibName:nil bundle:nil] autorelease];
     UINavigationController * moreNvg = [[[UINavigationController alloc] initWithRootViewController:moreCtr] autorelease];
     
+    shouYeNvg.navigationBar.tintColor = [UIColor blackColor];
+    classificationNvg.navigationBar.tintColor = [UIColor blackColor];
+    shopCarNvg.navigationBar.tintColor = [UIColor blackColor];
+    myFankeNvg.navigationBar.tintColor = [UIColor blackColor];
+    moreNvg.navigationBar.tintColor = [UIColor blackColor];
     NSArray* controllers = [NSArray arrayWithObjects:
                             shouYeNvg, 
                             classificationNvg,

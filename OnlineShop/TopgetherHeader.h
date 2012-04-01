@@ -11,4 +11,9 @@
 
 #import "TGViewController.h"
 #import "TGModuleHomeController.h"
+#import "TGLabel.h"
+#import "TGTableViewCell.h"
+#import "TGTableView.h"
+#import "TGView.h"
+#import "TGTextField.h"
 #endif
