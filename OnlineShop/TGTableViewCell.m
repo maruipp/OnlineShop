@@ -17,6 +17,7 @@
         // Initialization code
         self.backgroundColor = [UIColor clearColor];
         self.accessoryType = UITableViewCellAccessoryNone;
+        self.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     return self;
 }

@@ -22,6 +22,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        NSString * nvgTitle = [[NSUserDefaults standardUserDefaults] objectForKey:CURRENT_CONTROLLER_TITLE_KEY];
+        self.navigationItem.title = nvgTitle;
         [self readData:0];
     }
     return self;

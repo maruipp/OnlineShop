@@ -8,6 +8,10 @@
 
 #import "TGViewController.h"
 
-@interface ClassificationController : TGModuleHomeController
-
+@interface ClassificationController : TGModuleHomeController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView * detailTableView;
+    NSMutableArray * dataArray;
+}
+- (void) readData;
 @end

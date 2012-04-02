@@ -52,6 +52,9 @@
     return self;
 }
 
+
+#pragma mark --
+#pragma mark  UISearchBarDelegate
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
     [searchBar setShowsCancelButton:YES animated:YES];
@@ -70,8 +73,17 @@
 #pragma mark  read data
 - (void) readData
 {
-    dataArray = [[NSMutableArray arrayWithObjects:@"凡客热点",@"精品排行",@"新品上架",@"全场文胸吊带29",@"全棉免烫小方领衬衫",nil] retain];
+    dataArray = [[NSMutableArray arrayWithObjects:@"凡客热点",@"精品排行",@"新品上架",@"全场文胸吊带29",@"全棉免烫小方领衬衫68起",@"29元 青春多彩超炫邮差包",@"欧美风情情侣T恤 59元起",@"79起购林书豪款系列T恤",nil] retain];
     
+}
+
+#pragma mark --
+#pragma mark  UISearchBarDelegate
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSIndexPath * index = [detailTableView indexPathForSelectedRow];
+    [detailTableView deselectRowAtIndexPath:index animated:NO];
 }
 #pragma mark --
 #pragma mark  tableView datasource
@@ -81,8 +93,11 @@
     TGTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (!cell) {
         cell = [[TGTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+        cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    
     cell.textLabel.text = [dataArray objectAtIndex:indexPath.row];
     return cell;
 }
@@ -102,9 +117,50 @@
 //}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController * nextCtr = PAGECONTROLLER(@"GenralInfoListController");//GenralInfoListController
+    NSString * className = nil;
+    switch (indexPath.row) {
+        case 0:
+            
+            break;
+        case 1:
+            className = @"ColorfulCataListController";
+            break;
+        case 2:
+            className = @"GenralInfoListController";
+            break;
+//        case 3:
+//            
+//            break;
+//        case 4:
+//            
+//            break;
+//        case 5:
+//            
+//            break;
+//        case 6:
+//            
+//            break;
+            
+        default:
+            className = @"ImageListController";
+            break;
+    }
+    if (className == nil) {
+        return;
+    }
+    [[NSUserDefaults standardUserDefaults] setObject:[dataArray objectAtIndex:indexPath.row] forKey:CURRENT_CONTROLLER_TITLE_KEY];
+    UIViewController * nextCtr = PAGECONTROLLER(className);//GenralInfoListController
     //UIViewController * nextCtr = PAGECONTROLLER(@"ImageListController");
     [self.navigationController pushViewController:nextCtr animated:YES];
+}
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [cell setSelected:NO];
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 #pragma mark - 
 - (void)didReceiveMemoryWarning

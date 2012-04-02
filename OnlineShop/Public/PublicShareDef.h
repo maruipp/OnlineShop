@@ -26,7 +26,8 @@
 #define CURRENT_BULLETIN_ID_KEY @"CURRENT_BULLETIN_ID_KEY"
 //当前查看的留言的id的key
 #define CURRENT_MESSAGE_ID_KEY @"CURRENT_MESSAGE_ID_KEY"
-
+//要转到的controller的title的key
+#define CURRENT_CONTROLLER_TITLE_KEY @"CURRENT_CONTROLLER_TITLE_KEY"
 //获取用户名
 #define USERNAME   [[NSUserDefaults standardUserDefaults] objectForKey:USERNAME_KEY]
 //获取密码

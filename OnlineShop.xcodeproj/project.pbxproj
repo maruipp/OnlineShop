@@ -82,6 +82,15 @@
 		1F0571E11528977000BCE094 /* GenralInfoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0571E01528977000BCE094 /* GenralInfoListController.m */; };
 		1F0571E61528983D00BCE094 /* GeneralInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0571E51528983D00BCE094 /* GeneralInfoCell.m */; };
 		1F0571E815289BC900BCE094 /* IMG_0399.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1F0571E715289BC900BCE094 /* IMG_0399.PNG */; };
+		1F71328815295BF100172033 /* ColorfulCataListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71328715295BF100172033 /* ColorfulCataListController.m */; };
+		1F71328C15295C0900172033 /* ColorfulCataListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71328B15295C0900172033 /* ColorfulCataListCell.m */; };
+		1F71329F1529692A00172033 /* ChildCataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71329E1529692A00172033 /* ChildCataController.m */; };
+		1F7132A315297CF600172033 /* ProductDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132A215297CF600172033 /* ProductDetailController.m */; };
+		1F7132A715297D6A00172033 /* ProductDetailLine0Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132A615297D6A00172033 /* ProductDetailLine0Cell.m */; };
+		1F7132AA15297DA600172033 /* ProductDetailLine1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132A915297DA600172033 /* ProductDetailLine1Cell.m */; };
+		1F7132AD15297DB400172033 /* ProductDetailLine2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132AC15297DB400172033 /* ProductDetailLine2Cell.m */; };
+		1F7132B015297DC400172033 /* ProductDetailLine4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132AF15297DC400172033 /* ProductDetailLine4Cell.m */; };
+		1F7132B315297DD400172033 /* ProductDetailLine5Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */; };
 		1FE446331524953C005AA82B /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE446321524953C005AA82B /* ImageScrollView.m */; };
 		1FE4463615249E8A005AA82B /* IMG_0579.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463515249E8A005AA82B /* IMG_0579.PNG */; };
 		1FE4463815249F96005AA82B /* IMG_0582.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463715249F96005AA82B /* IMG_0582.PNG */; };
@@ -233,6 +242,24 @@
 		1F0571E41528983D00BCE094 /* GeneralInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralInfoCell.h; sourceTree = "<group>"; };
 		1F0571E51528983D00BCE094 /* GeneralInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralInfoCell.m; sourceTree = "<group>"; };
 		1F0571E715289BC900BCE094 /* IMG_0399.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0399.PNG; sourceTree = "<group>"; };
+		1F71328615295BF100172033 /* ColorfulCataListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorfulCataListController.h; path = OnlineShop/ColorfulCataListController.h; sourceTree = SOURCE_ROOT; };
+		1F71328715295BF100172033 /* ColorfulCataListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorfulCataListController.m; path = OnlineShop/ColorfulCataListController.m; sourceTree = SOURCE_ROOT; };
+		1F71328A15295C0900172033 /* ColorfulCataListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorfulCataListCell.h; path = OnlineShop/ColorfulCataListCell.h; sourceTree = SOURCE_ROOT; };
+		1F71328B15295C0900172033 /* ColorfulCataListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorfulCataListCell.m; path = OnlineShop/ColorfulCataListCell.m; sourceTree = SOURCE_ROOT; };
+		1F71329D1529692A00172033 /* ChildCataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildCataController.h; sourceTree = "<group>"; };
+		1F71329E1529692A00172033 /* ChildCataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildCataController.m; sourceTree = "<group>"; };
+		1F7132A115297CF600172033 /* ProductDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailController.h; path = OnlineShop/ProductDetailController.h; sourceTree = SOURCE_ROOT; };
+		1F7132A215297CF600172033 /* ProductDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailController.m; path = OnlineShop/ProductDetailController.m; sourceTree = SOURCE_ROOT; };
+		1F7132A515297D6A00172033 /* ProductDetailLine0Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailLine0Cell.h; path = OnlineShop/ProductDetailLine0Cell.h; sourceTree = SOURCE_ROOT; };
+		1F7132A615297D6A00172033 /* ProductDetailLine0Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine0Cell.m; path = OnlineShop/ProductDetailLine0Cell.m; sourceTree = SOURCE_ROOT; };
+		1F7132A815297DA600172033 /* ProductDetailLine1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailLine1Cell.h; path = OnlineShop/ProductDetailLine1Cell.h; sourceTree = SOURCE_ROOT; };
+		1F7132A915297DA600172033 /* ProductDetailLine1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine1Cell.m; path = OnlineShop/ProductDetailLine1Cell.m; sourceTree = SOURCE_ROOT; };
+		1F7132AB15297DB400172033 /* ProductDetailLine2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailLine2Cell.h; sourceTree = "<group>"; };
+		1F7132AC15297DB400172033 /* ProductDetailLine2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailLine2Cell.m; sourceTree = "<group>"; };
+		1F7132AE15297DC400172033 /* ProductDetailLine4Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailLine4Cell.h; path = OnlineShop/ProductDetailLine4Cell.h; sourceTree = SOURCE_ROOT; };
+		1F7132AF15297DC400172033 /* ProductDetailLine4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine4Cell.m; path = OnlineShop/ProductDetailLine4Cell.m; sourceTree = SOURCE_ROOT; };
+		1F7132B115297DD400172033 /* ProductDetailLine5Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailLine5Cell.h; path = OnlineShop/ProductDetailLine5Cell.h; sourceTree = SOURCE_ROOT; };
+		1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine5Cell.m; path = OnlineShop/ProductDetailLine5Cell.m; sourceTree = SOURCE_ROOT; };
 		1FE446311524953C005AA82B /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		1FE446321524953C005AA82B /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
 		1FE4463515249E8A005AA82B /* IMG_0579.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0579.PNG; path = Resource/IMG_0579.PNG; sourceTree = "<group>"; };
@@ -657,6 +684,8 @@
 			children = (
 				1F046B1215234BDC00129B8F /* ClassificationController.h */,
 				1F046B1315234BDC00129B8F /* ClassificationController.m */,
+				1F71329D1529692A00172033 /* ChildCataController.h */,
+				1F71329E1529692A00172033 /* ChildCataController.m */,
 			);
 			name = Classification;
 			sourceTree = "<group>";
@@ -675,12 +704,50 @@
 		1F0571E31528980C00BCE094 /* ImageList */ = {
 			isa = PBXGroup;
 			children = (
-				1FE747DD15274EDD00031C95 /* ZKQuickButtonView.h */,
-				1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */,
 				1F0571D51528825D00BCE094 /* ImageListController.h */,
 				1F0571D61528825D00BCE094 /* ImageListController.m */,
+				1FE747DD15274EDD00031C95 /* ZKQuickButtonView.h */,
+				1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */,
 			);
 			name = ImageList;
+			sourceTree = "<group>";
+		};
+		1F71328D15295C1400172033 /* ColorfulCataList */ = {
+			isa = PBXGroup;
+			children = (
+				1F71328615295BF100172033 /* ColorfulCataListController.h */,
+				1F71328715295BF100172033 /* ColorfulCataListController.m */,
+				1F71328A15295C0900172033 /* ColorfulCataListCell.h */,
+				1F71328B15295C0900172033 /* ColorfulCataListCell.m */,
+			);
+			name = ColorfulCataList;
+			sourceTree = "<group>";
+		};
+		1F7132A015297C8000172033 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1F7132A415297D3D00172033 /* cells */,
+				1F7132A115297CF600172033 /* ProductDetailController.h */,
+				1F7132A215297CF600172033 /* ProductDetailController.m */,
+			);
+			name = ProductDetail;
+			sourceTree = "<group>";
+		};
+		1F7132A415297D3D00172033 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F7132A515297D6A00172033 /* ProductDetailLine0Cell.h */,
+				1F7132A615297D6A00172033 /* ProductDetailLine0Cell.m */,
+				1F7132A815297DA600172033 /* ProductDetailLine1Cell.h */,
+				1F7132A915297DA600172033 /* ProductDetailLine1Cell.m */,
+				1F7132AB15297DB400172033 /* ProductDetailLine2Cell.h */,
+				1F7132AC15297DB400172033 /* ProductDetailLine2Cell.m */,
+				1F7132AE15297DC400172033 /* ProductDetailLine4Cell.h */,
+				1F7132AF15297DC400172033 /* ProductDetailLine4Cell.m */,
+				1F7132B115297DD400172033 /* ProductDetailLine5Cell.h */,
+				1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 		1FE747E01527504A00031C95 /* home */ = {
@@ -697,6 +764,8 @@
 		1FE747E11527505700031C95 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				1F7132A015297C8000172033 /* ProductDetail */,
+				1F71328D15295C1400172033 /* ColorfulCataList */,
 				1F0571E31528980C00BCE094 /* ImageList */,
 				1F0571E2152897EE00BCE094 /* GeneralInfo */,
 			);
@@ -841,6 +910,15 @@
 				1F0571D71528825D00BCE094 /* ImageListController.m in Sources */,
 				1F0571E11528977000BCE094 /* GenralInfoListController.m in Sources */,
 				1F0571E61528983D00BCE094 /* GeneralInfoCell.m in Sources */,
+				1F71328815295BF100172033 /* ColorfulCataListController.m in Sources */,
+				1F71328C15295C0900172033 /* ColorfulCataListCell.m in Sources */,
+				1F71329F1529692A00172033 /* ChildCataController.m in Sources */,
+				1F7132A315297CF600172033 /* ProductDetailController.m in Sources */,
+				1F7132A715297D6A00172033 /* ProductDetailLine0Cell.m in Sources */,
+				1F7132AA15297DA600172033 /* ProductDetailLine1Cell.m in Sources */,
+				1F7132AD15297DB400172033 /* ProductDetailLine2Cell.m in Sources */,
+				1F7132B015297DC400172033 /* ProductDetailLine4Cell.m in Sources */,
+				1F7132B315297DD400172033 /* ProductDetailLine5Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

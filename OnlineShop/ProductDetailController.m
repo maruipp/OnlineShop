@@ -1,14 +1,15 @@
 //
-//  GenralInfoListController.m
+//  ProductDetailController.m
 //  OnlineShop
 //
-//  Created by 瑞鹏 马 on 12-4-1.
+//  Created by 瑞鹏 马 on 12-4-2.
 //  Copyright (c) 2012年 BJTU. All rights reserved.
 //
 
-#import "GenralInfoListController.h"
+#import "ProductDetailController.h"
 
-@implementation GenralInfoListController
+@implementation ProductDetailController
+
 - (void) dealloc
 {
     [detailTableView release];
@@ -45,56 +46,60 @@
         [dataArray addObject:dic];
     }
     [dic release];
-
+    
 }
 
--(void)getReturnValue:(MRPNetwork *)sender obj:(NSDictionary *)obj
+
+#pragma mark --
+#pragma mark  UISearchBarDelegate
+- (void) viewWillDisappear:(BOOL)animated
 {
-    [super getReturnValue:sender obj:obj];
-
+    [super viewWillDisappear:animated];
+    NSIndexPath * index = [detailTableView indexPathForSelectedRow];
+    [detailTableView deselectRowAtIndexPath:index animated:NO];
 }
-
 #pragma mark --
 #pragma mark  tableView datasource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString * indentifier = @"cell";
-    GeneralInfoCell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+    ProductDetailLine0Cell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (!cell) {
-        cell = [[GeneralInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+        cell = [[ProductDetailLine0Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+        cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    //cell.textLabel.text = [dataArray objectAtIndex:indexPath.row];
+
+    
     [cell setDataDic:nil];
+    //cell.textLabel.text = [dataArray objectAtIndex:indexPath.row];
+    //cell.imageView.image = [UIImage imageNamed:@"IMG_0399.PNG"];
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 11;
+    return [dataArray count];
 }
-#pragma mark  tableview delegate 
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    float rowCount = [dataArray count] / 2.0;
-    if (rowCount > [dataArray count] / 2) {
-        rowCount++;
-    }
-    int height = rowCount * 184;
-    return 90;
-}
+#pragma mark  tableview delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString * className = @"ProductDetailController";
+    NSString * className = @"ChildCataController";
     
-    [[NSUserDefaults standardUserDefaults] setObject:@"产品详情" forKey:CURRENT_CONTROLLER_TITLE_KEY];
+    [[NSUserDefaults standardUserDefaults] setObject:[dataArray objectAtIndex:indexPath.row] forKey:CURRENT_CONTROLLER_TITLE_KEY];
     UIViewController * nextCtr = PAGECONTROLLER(className);//GenralInfoListController
     //UIViewController * nextCtr = PAGECONTROLLER(@"ImageListController");
     [self.navigationController pushViewController:nextCtr animated:YES];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    int height = 0;
+    if (0 == indexPath.row) {
+        height = 60;
+    }
+    return height;
+}
 
 #pragma mark -
 - (void)didReceiveMemoryWarning
