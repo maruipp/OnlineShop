@@ -9,5 +9,5 @@
 #import "TGTableViewCell.h"
 
 @interface ProductDetailLine1Cell : TGTableViewCell
-
+@property (nonatomic,retain) NSMutableDictionary * dataDic;
 @end

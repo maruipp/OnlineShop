@@ -16,4 +16,5 @@
 #import "TGTableView.h"
 #import "TGView.h"
 #import "TGTextField.h"
+#import "TGButton.h"
 #endif

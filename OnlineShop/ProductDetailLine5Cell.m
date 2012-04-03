@@ -9,5 +9,22 @@
 #import "ProductDetailLine5Cell.h"
 
 @implementation ProductDetailLine5Cell
+@synthesize dataDic = _dataDic;
+- (void) dealloc
+{
+    [_dataDic release];
+    [super dealloc];
+}
 
+- (void) setDataDic:(NSMutableDictionary *)dataDic
+{
+    if (_dataDic) {
+        [_dataDic release];
+        _dataDic = nil;
+        
+    }
+    _dataDic = [dataDic retain];
+    self.textLabel.text = @"购买评论（31）";
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
 @end

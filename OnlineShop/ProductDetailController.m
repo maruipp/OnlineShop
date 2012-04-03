@@ -62,15 +62,19 @@
 #pragma mark  tableView datasource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString * indentifier = @"cell";
-    ProductDetailLine0Cell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+ 
+    NSString * indentifier = [NSString stringWithFormat:@"cell%i",indexPath.row];
+    Class cellClass = NSClassFromString([NSString stringWithFormat:@"ProductDetailLine%iCell",indexPath.row]);
+    TGTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (!cell) {
-        cell = [[ProductDetailLine0Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+        cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
         cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
 
+    if ([cell respondsToSelector:@selector(setDataDic:)]) {
+        [cell setDataDic:nil];
+    }
     
-    [cell setDataDic:nil];
     //cell.textLabel.text = [dataArray objectAtIndex:indexPath.row];
     //cell.imageView.image = [UIImage imageNamed:@"IMG_0399.PNG"];
     return cell;
@@ -78,24 +82,40 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [dataArray count];
+    return 7;
 }
 #pragma mark  tableview delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString * className = @"ChildCataController";
-    
-    [[NSUserDefaults standardUserDefaults] setObject:[dataArray objectAtIndex:indexPath.row] forKey:CURRENT_CONTROLLER_TITLE_KEY];
-    UIViewController * nextCtr = PAGECONTROLLER(className);//GenralInfoListController
-    //UIViewController * nextCtr = PAGECONTROLLER(@"ImageListController");
-    [self.navigationController pushViewController:nextCtr animated:YES];
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSString * className = @"ChildCataController";
+//    
+//    [[NSUserDefaults standardUserDefaults] setObject:[dataArray objectAtIndex:indexPath.row] forKey:CURRENT_CONTROLLER_TITLE_KEY];
+//    UIViewController * nextCtr = PAGECONTROLLER(className);//GenralInfoListController
+//    //UIViewController * nextCtr = PAGECONTROLLER(@"ImageListController");
+//    [self.navigationController pushViewController:nextCtr animated:YES];
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int height = 0;
+    int height = 40;
     if (0 == indexPath.row) {
+        height = 60;
+    }
+    else if(1 == indexPath.row)
+    {
+        height = 40;
+    }
+    else if(2 == indexPath.row)
+    {
+        height = 80;
+    }
+    else if(3 == indexPath.row)
+    {
+        height = 40;
+    }
+    else if(4 == indexPath.row)
+    {
         height = 60;
     }
     return height;

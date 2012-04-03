@@ -12,6 +12,7 @@
 @synthesize dataDic = _dataDic;
 - (void) dealloc
 {
+    [_dataDic release];
     [nameLabel release];
     [idLabel release];
     [priceLabel release];
