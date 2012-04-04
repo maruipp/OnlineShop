@@ -94,6 +94,7 @@
 		1F7132AD15297DB400172033 /* ProductDetailLine2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132AC15297DB400172033 /* ProductDetailLine2Cell.m */; };
 		1F7132B015297DC400172033 /* ProductDetailLine4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132AF15297DC400172033 /* ProductDetailLine4Cell.m */; };
 		1F7132B315297DD400172033 /* ProductDetailLine5Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */; };
+		1F771877152C846800D90018 /* ProductShowScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F771876152C846800D90018 /* ProductShowScrollView.m */; };
 		1FE446331524953C005AA82B /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE446321524953C005AA82B /* ImageScrollView.m */; };
 		1FE4463615249E8A005AA82B /* IMG_0579.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463515249E8A005AA82B /* IMG_0579.PNG */; };
 		1FE4463815249F96005AA82B /* IMG_0582.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463715249F96005AA82B /* IMG_0582.PNG */; };
@@ -269,6 +270,8 @@
 		1F7132AF15297DC400172033 /* ProductDetailLine4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine4Cell.m; path = OnlineShop/ProductDetailLine4Cell.m; sourceTree = SOURCE_ROOT; };
 		1F7132B115297DD400172033 /* ProductDetailLine5Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailLine5Cell.h; path = OnlineShop/ProductDetailLine5Cell.h; sourceTree = SOURCE_ROOT; };
 		1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine5Cell.m; path = OnlineShop/ProductDetailLine5Cell.m; sourceTree = SOURCE_ROOT; };
+		1F771875152C846700D90018 /* ProductShowScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductShowScrollView.h; path = OnlineShop/ProductShowScrollView.h; sourceTree = SOURCE_ROOT; };
+		1F771876152C846800D90018 /* ProductShowScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductShowScrollView.m; path = OnlineShop/ProductShowScrollView.m; sourceTree = SOURCE_ROOT; };
 		1FE446311524953C005AA82B /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		1FE446321524953C005AA82B /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
 		1FE4463515249E8A005AA82B /* IMG_0579.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0579.PNG; path = Resource/IMG_0579.PNG; sourceTree = "<group>"; };
@@ -740,6 +743,8 @@
 				1F7132A415297D3D00172033 /* cells */,
 				1F7132A115297CF600172033 /* ProductDetailController.h */,
 				1F7132A215297CF600172033 /* ProductDetailController.m */,
+				1F771875152C846700D90018 /* ProductShowScrollView.h */,
+				1F771876152C846800D90018 /* ProductShowScrollView.m */,
 			);
 			name = ProductDetail;
 			sourceTree = "<group>";
@@ -937,6 +942,7 @@
 				1F08DE4A152A8AD500E382C7 /* TGButton.m in Sources */,
 				1F08DE4E152A95D500E382C7 /* ProductDetailLine3Cell.m in Sources */,
 				1F08DE51152A9C8C00E382C7 /* ProductDetailLine6Cell.m in Sources */,
+				1F771877152C846800D90018 /* ProductShowScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

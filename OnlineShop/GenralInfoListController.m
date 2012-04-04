@@ -105,6 +105,14 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+#pragma mark --
+#pragma mark  UISearchBarDelegate
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSIndexPath * index = [detailTableView indexPathForSelectedRow];
+    [detailTableView deselectRowAtIndexPath:index animated:NO];
+}
 #pragma mark - View lifecycle
 
 /*

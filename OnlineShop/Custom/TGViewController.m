@@ -32,7 +32,7 @@
 - (void) readData:(int) index
 {
     [self initProgressHD];
-    network = [[MRPNetwork alloc] initWithTarget:self action:@selector(getReturnValue:obj:)];
+    
 }
 
 -(void)getReturnValue:(MRPNetwork *)sender obj:(NSDictionary *)obj
@@ -93,10 +93,15 @@
 #pragma mark - 页面切换时停止网络请求
 - (void) viewDidDisappear:(BOOL)animated
 {
+    CLog(@"%@", network);
     [network stopHttpRequest];
+    network = nil;
 }
 
-
+- (void) viewDidAppear:(BOOL)animated
+{
+    network = [[MRPNetwork alloc] initWithTarget:self action:@selector(getReturnValue:obj:)];
+}
 #pragma mark -
 - (void)didReceiveMemoryWarning
 {

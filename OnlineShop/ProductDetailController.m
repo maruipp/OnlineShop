@@ -12,6 +12,7 @@
 
 - (void) dealloc
 {
+    [detailScrollView release];
     [detailTableView release];
     [super dealloc];
 }
@@ -24,6 +25,22 @@
         detailTableView.dataSource = self;
         detailTableView.delegate = self;
         [self.view addSubview:detailTableView];
+        
+        UIImageView * image = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"IMG_0395.PNG"]] autorelease];
+        UIImageView * image1 = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"IMG_0395.PNG"]] autorelease];
+        UIImageView * image2 = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"IMG_0395.PNG"]] autorelease];
+        NSMutableArray * arr = [NSMutableArray arrayWithObjects:image,image1,image2, nil];
+        
+        
+        detailScrollView = [[ProductShowScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+       // [self.view addSubview:detailScrollView];
+        [detailScrollView setImages:arr];
+       // [self.view bringSubviewToFront:detailScrollView];
+        
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+        detailTableView.tableHeaderView = view;
+        [view addSubview:detailScrollView];
+        [view release];
     }
     return self;
 }
@@ -67,7 +84,7 @@
     Class cellClass = NSClassFromString([NSString stringWithFormat:@"ProductDetailLine%iCell",indexPath.row]);
     TGTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (!cell) {
-        cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+        cell = [[[cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier] autorelease];
         cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
 
