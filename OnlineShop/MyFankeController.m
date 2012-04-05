@@ -33,7 +33,7 @@
 
 - (void) cancel
 {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_HIDE_KEYBOARD_IN_LOGINVIEW object:nil];
 }
 
 - (void) login

@@ -47,6 +47,8 @@
 #define NOTIFICATION_HOME_TO_NEXT_PAGE @"NOTIFICATION_HOME_TO_NEXT_PAGE"
 #define NOTIFICATION_SHOW_TABBAR                        @"GLOBAL_SHOW_TABBAR"
 #define NOTIFICATION_HIDE_TABBAR                        @"GLOBAL_HIDE_TABBAR"
+
+#define NOTIFICATION_HIDE_KEYBOARD_IN_LOGINVIEW @"NOTIFICATION_HIDE_KEYBOARD_IN_LOGINVIEW"
 //菜单数据
 #define MENU_DICTIONARY [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Menu.plist" ofType:nil]]
 #define List_ITEM_CONFIG [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Menu.plist" ofType:nil]]
