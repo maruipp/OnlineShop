@@ -101,6 +101,12 @@
 		1FE4463C1524AF7B005AA82B /* scroll3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FE446391524AF7B005AA82B /* scroll3.jpg */; };
 		1FE4463D1524AF7B005AA82B /* scroll2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463A1524AF7B005AA82B /* scroll2.jpg */; };
 		1FE4463E1524AF7B005AA82B /* scroll1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463B1524AF7B005AA82B /* scroll1.jpg */; };
+		1FE48688152D29470045DA91 /* buyNow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE48684152D29470045DA91 /* buyNow.png */; };
+		1FE48689152D29470045DA91 /* colorBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE48685152D29470045DA91 /* colorBtn.png */; };
+		1FE4868A152D29470045DA91 /* sizeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE48686152D29470045DA91 /* sizeBtn.png */; };
+		1FE4868B152D29470045DA91 /* addToBuyCar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE48687152D29470045DA91 /* addToBuyCar.png */; };
+		1FE4868E152D294D0045DA91 /* hotline.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4868C152D294D0045DA91 /* hotline.png */; };
+		1FE4868F152D294D0045DA91 /* descLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4868D152D294D0045DA91 /* descLabel.png */; };
 		1FE747D3152747C500031C95 /* TGTextFieldNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */; };
 		1FE747D4152747C500031C95 /* TGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CB152747C500031C95 /* TGLabel.m */; };
 		1FE747D5152747C500031C95 /* TGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CD152747C500031C95 /* TGTableViewCell.m */; };
@@ -279,6 +285,12 @@
 		1FE446391524AF7B005AA82B /* scroll3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scroll3.jpg; sourceTree = "<group>"; };
 		1FE4463A1524AF7B005AA82B /* scroll2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scroll2.jpg; sourceTree = "<group>"; };
 		1FE4463B1524AF7B005AA82B /* scroll1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scroll1.jpg; sourceTree = "<group>"; };
+		1FE48684152D29470045DA91 /* buyNow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buyNow.png; sourceTree = "<group>"; };
+		1FE48685152D29470045DA91 /* colorBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorBtn.png; sourceTree = "<group>"; };
+		1FE48686152D29470045DA91 /* sizeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sizeBtn.png; sourceTree = "<group>"; };
+		1FE48687152D29470045DA91 /* addToBuyCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addToBuyCar.png; sourceTree = "<group>"; };
+		1FE4868C152D294D0045DA91 /* hotline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotline.png; sourceTree = "<group>"; };
+		1FE4868D152D294D0045DA91 /* descLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = descLabel.png; sourceTree = "<group>"; };
 		1FE747C8152747C500031C95 /* TGTextFieldNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTextFieldNotificationCenter.h; sourceTree = "<group>"; };
 		1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTextFieldNotificationCenter.m; sourceTree = "<group>"; };
 		1FE747CA152747C500031C95 /* TGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLabel.h; sourceTree = "<group>"; };
@@ -613,6 +625,7 @@
 		1F03C7A315221153006DB786 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1FE48682152D29380045DA91 /* product detail */,
 				1F03C7A415221153006DB786 /* guide_cart_nm.png */,
 				1F03C7A515221153006DB786 /* guide_cart_on.png */,
 				1F03C7A615221153006DB786 /* guide_home_nm.png */,
@@ -770,6 +783,19 @@
 			name = cells;
 			sourceTree = "<group>";
 		};
+		1FE48682152D29380045DA91 /* product detail */ = {
+			isa = PBXGroup;
+			children = (
+				1FE4868C152D294D0045DA91 /* hotline.png */,
+				1FE4868D152D294D0045DA91 /* descLabel.png */,
+				1FE48684152D29470045DA91 /* buyNow.png */,
+				1FE48685152D29470045DA91 /* colorBtn.png */,
+				1FE48686152D29470045DA91 /* sizeBtn.png */,
+				1FE48687152D29470045DA91 /* addToBuyCar.png */,
+			);
+			name = "product detail";
+			sourceTree = "<group>";
+		};
 		1FE747E01527504A00031C95 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,6 +890,12 @@
 				1FE4463E1524AF7B005AA82B /* scroll1.jpg in Resources */,
 				1F0571DE1528892C00BCE094 /* IMG_0395.PNG in Resources */,
 				1F0571E815289BC900BCE094 /* IMG_0399.PNG in Resources */,
+				1FE48688152D29470045DA91 /* buyNow.png in Resources */,
+				1FE48689152D29470045DA91 /* colorBtn.png in Resources */,
+				1FE4868A152D29470045DA91 /* sizeBtn.png in Resources */,
+				1FE4868B152D29470045DA91 /* addToBuyCar.png in Resources */,
+				1FE4868E152D294D0045DA91 /* hotline.png in Resources */,
+				1FE4868F152D294D0045DA91 /* descLabel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

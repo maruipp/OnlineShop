@@ -20,20 +20,27 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        TGButton * btn00 = [TGButton buttonWithType:UIButtonTypeRoundedRect];
-        btn00.frame = CGRectMake(10, 5, 145, 25);
-        [btn00 setTitle:@"立即购买" forState:UIControlStateNormal];
+        TGButton * btn00 = [TGButton buttonWithType:UIButtonTypeCustom];
+        btn00.frame = CGRectMake(10, 5, 145, 28);
+        [btn00 setImage:[UIImage imageNamed:@"buyNow.png"] forState:UIControlStateNormal];
+        //[btn00 setTitle:@"立即购买" forState:UIControlStateNormal];
         [self addSubview:btn00];
         TGButton * btn01 = [TGButton buttonWithType:UIButtonTypeRoundedRect];
-        btn01.frame = CGRectMake(165, 5, 145, 25);
+        btn01.frame = CGRectMake(165, 5, 145, 28);
+        [btn01 setImage:[UIImage imageNamed:@"addToBuyCar.png"] forState:UIControlStateNormal];
         [btn01 setTitle:@"加入购物车" forState:UIControlStateNormal];
         [self addSubview:btn01];
-        TGLabel * label = [[[TGLabel alloc] initWithFrame:CGRectMake(0, 40, 320, 40)] autorelease];
-        [self addSubview:label];
+//        TGLabel * label = [[[TGLabel alloc] initWithFrame:CGRectMake(0, 40, 320, 40)] autorelease];
+//        [self addSubview:label];
         
         btn00.tintColor = [UIColor redColor];
         btn01.tintColor = [UIColor redColor];
-        label.text = @"i am a label";
+        
+        UIImageView * labelImage = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 320, 40)] autorelease];
+        [self addSubview:labelImage];
+        [labelImage setImage:[UIImage imageNamed:@"descLabel.png"]];
+       // label.backgroundColor =[UIColor colorWithPatternImage:[UIImage imageNamed:@"descLabel.png"]];
+        //label.text = @"i am a label";
        // btn00.titleLabel.textColor = 
     }
     return self;
