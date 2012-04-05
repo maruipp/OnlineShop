@@ -7,7 +7,9 @@
 //
 
 #import "TGViewController.h"
-
-@interface MyFankeController : TGModuleHomeController
-
+#import "CommonLoginTableViewCell.h"
+@interface MyFankeController : TGModuleHomeController <UITableViewDataSource,UITableViewDelegate>
+{
+    TGTableView * detailTableView;
+}
 @end

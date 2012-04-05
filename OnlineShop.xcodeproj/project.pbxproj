@@ -107,6 +107,8 @@
 		1FE4868B152D29470045DA91 /* addToBuyCar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE48687152D29470045DA91 /* addToBuyCar.png */; };
 		1FE4868E152D294D0045DA91 /* hotline.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4868C152D294D0045DA91 /* hotline.png */; };
 		1FE4868F152D294D0045DA91 /* descLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4868D152D294D0045DA91 /* descLabel.png */; };
+		1FE48695152D39680045DA91 /* emptyCar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE48694152D39680045DA91 /* emptyCar.png */; };
+		1FE486A0152D3E1C0045DA91 /* CommonLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4869F152D3E1C0045DA91 /* CommonLoginTableViewCell.m */; };
 		1FE747D3152747C500031C95 /* TGTextFieldNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */; };
 		1FE747D4152747C500031C95 /* TGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CB152747C500031C95 /* TGLabel.m */; };
 		1FE747D5152747C500031C95 /* TGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CD152747C500031C95 /* TGTableViewCell.m */; };
@@ -291,6 +293,9 @@
 		1FE48687152D29470045DA91 /* addToBuyCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addToBuyCar.png; sourceTree = "<group>"; };
 		1FE4868C152D294D0045DA91 /* hotline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotline.png; sourceTree = "<group>"; };
 		1FE4868D152D294D0045DA91 /* descLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = descLabel.png; sourceTree = "<group>"; };
+		1FE48694152D39680045DA91 /* emptyCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyCar.png; sourceTree = "<group>"; };
+		1FE4869E152D3E1C0045DA91 /* CommonLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CommonLoginTableViewCell.h; sourceTree = "<group>"; };
+		1FE4869F152D3E1C0045DA91 /* CommonLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLoginTableViewCell.m; sourceTree = "<group>"; };
 		1FE747C8152747C500031C95 /* TGTextFieldNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTextFieldNotificationCenter.h; sourceTree = "<group>"; };
 		1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTextFieldNotificationCenter.m; sourceTree = "<group>"; };
 		1FE747CA152747C500031C95 /* TGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLabel.h; sourceTree = "<group>"; };
@@ -405,6 +410,8 @@
 		1F03C70B1522026D006DB786 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1FE4869E152D3E1C0045DA91 /* CommonLoginTableViewCell.h */,
+				1FE4869F152D3E1C0045DA91 /* CommonLoginTableViewCell.m */,
 				1F03C70C1522026D006DB786 /* CommonImageTitleStuct.h */,
 				1F03C70D1522026D006DB786 /* CommonImageTitleStuct.m */,
 				1F03C70E1522026D006DB786 /* CommonLeftRightCell.h */,
@@ -792,6 +799,7 @@
 				1FE48685152D29470045DA91 /* colorBtn.png */,
 				1FE48686152D29470045DA91 /* sizeBtn.png */,
 				1FE48687152D29470045DA91 /* addToBuyCar.png */,
+				1FE48694152D39680045DA91 /* emptyCar.png */,
 			);
 			name = "product detail";
 			sourceTree = "<group>";
@@ -896,6 +904,7 @@
 				1FE4868B152D29470045DA91 /* addToBuyCar.png in Resources */,
 				1FE4868E152D294D0045DA91 /* hotline.png in Resources */,
 				1FE4868F152D294D0045DA91 /* descLabel.png in Resources */,
+				1FE48695152D39680045DA91 /* emptyCar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,6 +984,7 @@
 				1F08DE4E152A95D500E382C7 /* ProductDetailLine3Cell.m in Sources */,
 				1F08DE51152A9C8C00E382C7 /* ProductDetailLine6Cell.m in Sources */,
 				1F771877152C846800D90018 /* ProductShowScrollView.m in Sources */,
+				1FE486A0152D3E1C0045DA91 /* CommonLoginTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,9 @@
 
 #import "TGViewController.h"
 
-@interface MoreController : TGModuleHomeController
+@interface MoreController : TGModuleHomeController <UITableViewDataSource,UITableViewDelegate>
+{
+    TGTableView * detailTableView;
+}
 
 @end

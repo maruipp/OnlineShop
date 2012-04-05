@@ -14,7 +14,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        UIImageView * bk = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 367)] autorelease];
+        [bk setImage:[UIImage imageNamed:@"emptyCar.png"]];
+        [self.view addSubview:bk];
     }
     return self;
 }
