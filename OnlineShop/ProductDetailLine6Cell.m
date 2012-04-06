@@ -24,8 +24,25 @@
         btn.frame = CGRectMake(40, 5, 240, 30);
         btn.titleLabel.textAlignment = UITextAlignmentCenter;
         [btn setTitle:@"订购电话 400 600 6888" forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(dialHotLine:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
     }
     return self;
+}
+
+- (void) dialHotLine:(id) sender
+{
+    //TGButton * btn = sender;
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:nil message:@"400-600-6888" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"呼叫   ", nil];
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    CLog(@"%i",buttonIndex);
+    if (1 == buttonIndex) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:4006006888"]];
+    }
 }
 @end

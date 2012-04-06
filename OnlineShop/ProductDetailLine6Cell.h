@@ -8,6 +8,6 @@
 
 #import "TGTableViewCell.h"
 
-@interface ProductDetailLine6Cell : TGTableViewCell
+@interface ProductDetailLine6Cell : TGTableViewCell <UIAlertViewDelegate>
 @property (nonatomic,retain) NSMutableDictionary * dataDic;
 @end

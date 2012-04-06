@@ -95,6 +95,7 @@
 		1F7132B015297DC400172033 /* ProductDetailLine4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132AF15297DC400172033 /* ProductDetailLine4Cell.m */; };
 		1F7132B315297DD400172033 /* ProductDetailLine5Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */; };
 		1F771877152C846800D90018 /* ProductShowScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F771876152C846800D90018 /* ProductShowScrollView.m */; };
+		1FAEBF00152ED22A00EAB3A7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAEBEFF152ED22A00EAB3A7 /* icon.png */; };
 		1FE446331524953C005AA82B /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE446321524953C005AA82B /* ImageScrollView.m */; };
 		1FE4463615249E8A005AA82B /* IMG_0579.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463515249E8A005AA82B /* IMG_0579.PNG */; };
 		1FE4463815249F96005AA82B /* IMG_0582.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4463715249F96005AA82B /* IMG_0582.PNG */; };
@@ -280,6 +281,7 @@
 		1F7132B215297DD400172033 /* ProductDetailLine5Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine5Cell.m; path = OnlineShop/ProductDetailLine5Cell.m; sourceTree = SOURCE_ROOT; };
 		1F771875152C846700D90018 /* ProductShowScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductShowScrollView.h; path = OnlineShop/ProductShowScrollView.h; sourceTree = SOURCE_ROOT; };
 		1F771876152C846800D90018 /* ProductShowScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductShowScrollView.m; path = OnlineShop/ProductShowScrollView.m; sourceTree = SOURCE_ROOT; };
+		1FAEBEFF152ED22A00EAB3A7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		1FE446311524953C005AA82B /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		1FE446321524953C005AA82B /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
 		1FE4463515249E8A005AA82B /* IMG_0579.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0579.PNG; path = Resource/IMG_0579.PNG; sourceTree = "<group>"; };
@@ -294,7 +296,7 @@
 		1FE4868C152D294D0045DA91 /* hotline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotline.png; sourceTree = "<group>"; };
 		1FE4868D152D294D0045DA91 /* descLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = descLabel.png; sourceTree = "<group>"; };
 		1FE48694152D39680045DA91 /* emptyCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyCar.png; sourceTree = "<group>"; };
-		1FE4869E152D3E1C0045DA91 /* CommonLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CommonLoginTableViewCell.h; sourceTree = "<group>"; };
+		1FE4869E152D3E1C0045DA91 /* CommonLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonLoginTableViewCell.h; sourceTree = "<group>"; };
 		1FE4869F152D3E1C0045DA91 /* CommonLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLoginTableViewCell.m; sourceTree = "<group>"; };
 		1FE747C8152747C500031C95 /* TGTextFieldNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTextFieldNotificationCenter.h; sourceTree = "<group>"; };
 		1FE747C9152747C500031C95 /* TGTextFieldNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTextFieldNotificationCenter.m; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 		1F03C65A1521F33D006DB786 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FAEBEFF152ED22A00EAB3A7 /* icon.png */,
 				1FE4463515249E8A005AA82B /* IMG_0579.PNG */,
 				1FE4463715249F96005AA82B /* IMG_0582.PNG */,
 				1FE446391524AF7B005AA82B /* scroll3.jpg */,
@@ -905,6 +908,7 @@
 				1FE4868E152D294D0045DA91 /* hotline.png in Resources */,
 				1FE4868F152D294D0045DA91 /* descLabel.png in Resources */,
 				1FE48695152D39680045DA91 /* emptyCar.png in Resources */,
+				1FAEBF00152ED22A00EAB3A7 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,7 +1025,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1038,7 +1042,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

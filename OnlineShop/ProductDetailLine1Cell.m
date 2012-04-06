@@ -26,7 +26,7 @@
         TGButton * color = [TGButton buttonWithType:UIButtonTypeRoundedRect];
         color.frame = CGRectMake(50,6, 80, 30);
         [color setTitle:@"深麻灰色" forState:UIControlStateNormal];
-        [color addTarget:self action:@selector(colorButtonDown) forControlEvents:UIControlEventTouchUpInside];
+        [color addTarget:self action:@selector(colorButtonDown:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:color];
         
         TGLabel * inchSizeLabel = [[[TGLabel alloc] initWithFrame:CGRectMake(180, 6, 60, 30)] autorelease];
@@ -34,7 +34,7 @@
         [self addSubview:inchSizeLabel];
         TGButton * inchSize = [TGButton buttonWithType:UIButtonTypeRoundedRect];
         inchSize.frame = CGRectMake(240,6, 60, 30);
-        [inchSize addTarget:self action:@selector(inchSizeButtonDown) forControlEvents:UIControlEventTouchUpInside];
+        [inchSize addTarget:self action:@selector(inchSizeButtonDown:) forControlEvents:UIControlEventTouchUpInside];
         [inchSize setTitle:@"S" forState:UIControlStateNormal];
         [self addSubview:inchSize];
         
