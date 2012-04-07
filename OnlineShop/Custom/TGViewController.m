@@ -31,7 +31,7 @@
 
 - (void) readData:(int) index
 {
-    [self initProgressHD];
+    //[self initProgressHD];
     
 }
 

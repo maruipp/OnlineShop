@@ -22,7 +22,7 @@
     if (self) {
         // Custom initialization
         
-        detailTableView = [[TGTableView alloc] initWithFrame:CGRectMake(0, 0, 320, 367) style:UITableViewStyleGrouped];
+        detailTableView = [[TGTableView alloc] initWithFrame:RECT_TABBAR_NAVIGATIONBAR_STATUS style:UITableViewStyleGrouped];
         detailTableView.dataSource = self;
         detailTableView.delegate = self;
         [self.view addSubview:detailTableView];

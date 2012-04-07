@@ -7,11 +7,12 @@
 //
 
 #import "ProductDetailController.h"
-
+#import "SettlementCenterController.h"
 @implementation ProductDetailController
 
 - (void) dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [detailScrollView release];
     [detailTableView release];
     [super dealloc];
@@ -21,7 +22,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        detailTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 367) style:UITableViewStylePlain];
+        detailTableView = [[UITableView alloc] initWithFrame:RECT_TABBAR_NAVIGATIONBAR_STATUS style:UITableViewStylePlain];
         detailTableView.dataSource = self;
         detailTableView.delegate = self;
         [self.view addSubview:detailTableView];
@@ -41,10 +42,18 @@
         detailTableView.tableHeaderView = view;
         [view addSubview:detailScrollView];
         [view release];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toSettlementCenter) name:NOTIFICATION_TO_SETTLEMENT_CENTER object:nil];
     }
     return self;
 }
 
+- (void)toSettlementCenter
+{
+    UIViewController * nextCtr = PAGECONTROLLER(@"SettlementCenterController");//GenralInfoListController
+    //UIViewController * nextCtr = PAGECONTROLLER(@"ImageListController");
+    [self.navigationController pushViewController:nextCtr animated:YES];
+}
 
 - (void) readData:(int) index
 {

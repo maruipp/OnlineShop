@@ -23,6 +23,7 @@
         TGButton * btn00 = [TGButton buttonWithType:UIButtonTypeCustom];
         btn00.frame = CGRectMake(10, 5, 145, 28);
         [btn00 setImage:[UIImage imageNamed:@"buyNow.png"] forState:UIControlStateNormal];
+        [btn00 addTarget:self action:@selector(buyNowButtonDown:) forControlEvents:UIControlEventTouchUpInside];
         //[btn00 setTitle:@"立即购买" forState:UIControlStateNormal];
         [self addSubview:btn00];
         TGButton * btn01 = [TGButton buttonWithType:UIButtonTypeRoundedRect];
@@ -44,5 +45,10 @@
        // btn00.titleLabel.textColor = 
     }
     return self;
+}
+
+- (void)buyNowButtonDown:(id) sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_TO_SETTLEMENT_CENTER object:nil];
 }
 @end

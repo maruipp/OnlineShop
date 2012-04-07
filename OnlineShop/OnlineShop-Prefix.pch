@@ -13,4 +13,5 @@
     #import <Foundation/Foundation.h>
     #import "CLog.h"
     #import "TopgetherHeader.h"
+    #import "PublicShareDef.h"
 #endif

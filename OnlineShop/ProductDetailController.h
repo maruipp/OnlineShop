@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 //#import "ProductDetailLine0Cell.h"
 #import "ProductShowScrollView.h"
+
 @interface ProductDetailController : TGViewController <UITableViewDataSource,UITableViewDelegate>
 {
     UITableView * detailTableView;

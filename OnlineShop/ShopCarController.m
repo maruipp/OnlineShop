@@ -14,7 +14,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIImageView * bk = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 367)] autorelease];
+        UIImageView * bk = [[[UIImageView alloc] initWithFrame:RECT_TABBAR_NAVIGATIONBAR_STATUS] autorelease];
         [bk setImage:[UIImage imageNamed:@"emptyCar.png"]];
         [self.view addSubview:bk];
     }

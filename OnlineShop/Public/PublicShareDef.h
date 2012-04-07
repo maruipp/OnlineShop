@@ -40,7 +40,7 @@
 #define PAGECONTROLLER(CONTROLLER) [[[NSClassFromString(CONTROLLER) alloc] initWithNibName:nil bundle:nil] autorelease]
 
 //消息中心
-
+#define NOTIFICATION_TO_SETTLEMENT_CENTER @"NOTIFICATION_TO_SETTLEMENT_CENTER"
 #define NOTIFICATION_LOGIN_BUTTON_DOWN @"NOTIFICATION_LOGIN_BUTTON_DOWN"
 #define NOTIFICATION_LOGIN_SUCCESS @"NOTIFICATION_LOGIN_SUCCESS"
 
@@ -56,4 +56,7 @@
 //list数据  
 #define PLIST_CONFIGS [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Configs.plist" ofType:nil]]
 
+
+//除去navigationbar、tabbar、状态条后剩下的view的frame
+#define RECT_TABBAR_NAVIGATIONBAR_STATUS CGRectMake(0, 0, 320, 367)
 #endif

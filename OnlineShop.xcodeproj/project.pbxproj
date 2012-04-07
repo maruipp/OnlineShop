@@ -116,6 +116,16 @@
 		1FE747D6152747C500031C95 /* TGTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747CF152747C500031C95 /* TGTableView.m */; };
 		1FE747D7152747C500031C95 /* TGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747D1152747C500031C95 /* TGView.m */; };
 		1FE747DF15274EDD00031C95 /* ZKQuickButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */; };
+		1FEEEFAF15301F0E001ADA69 /* SettlementCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFAE15301F0E001ADA69 /* SettlementCenterController.m */; };
+		1FEEEFB315302538001ADA69 /* SettlementCenterCell00.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFB215302538001ADA69 /* SettlementCenterCell00.m */; };
+		1FEEEFB615302552001ADA69 /* SettlementCenterCell01.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFB515302552001ADA69 /* SettlementCenterCell01.m */; };
+		1FEEEFB915302561001ADA69 /* SettlementCenterCell02.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFB815302561001ADA69 /* SettlementCenterCell02.m */; };
+		1FEEEFBC153025BB001ADA69 /* SettlementCenterCell10.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFBB153025BA001ADA69 /* SettlementCenterCell10.m */; };
+		1FEEEFBF153025C7001ADA69 /* SettlementCenterCell20.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFBE153025C6001ADA69 /* SettlementCenterCell20.m */; };
+		1FEEEFC2153025D5001ADA69 /* SettlementCenterCell30.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFC1153025D5001ADA69 /* SettlementCenterCell30.m */; };
+		1FEEEFC5153025E4001ADA69 /* SettlementCenterCell31.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFC4153025E3001ADA69 /* SettlementCenterCell31.m */; };
+		1FEEEFC8153025F0001ADA69 /* SettlementCenterCell32.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFC7153025F0001ADA69 /* SettlementCenterCell32.m */; };
+		1FEEEFCB1530260D001ADA69 /* SettlementCenterCell40.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEEFCA1530260C001ADA69 /* SettlementCenterCell40.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -311,6 +321,26 @@
 		1FE747D2152747C500031C95 /* TGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTextField.h; sourceTree = "<group>"; };
 		1FE747DD15274EDD00031C95 /* ZKQuickButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKQuickButtonView.h; sourceTree = "<group>"; };
 		1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKQuickButtonView.m; sourceTree = "<group>"; };
+		1FEEEFAD15301F0E001ADA69 /* SettlementCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterController.h; path = OnlineShop/SettlementCenterController.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFAE15301F0E001ADA69 /* SettlementCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterController.m; path = OnlineShop/SettlementCenterController.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFB115302538001ADA69 /* SettlementCenterCell00.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell00.h; path = OnlineShop/SettlementCenterCell00.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFB215302538001ADA69 /* SettlementCenterCell00.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell00.m; path = OnlineShop/SettlementCenterCell00.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFB415302552001ADA69 /* SettlementCenterCell01.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell01.h; path = OnlineShop/SettlementCenterCell01.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFB515302552001ADA69 /* SettlementCenterCell01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell01.m; path = OnlineShop/SettlementCenterCell01.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFB715302561001ADA69 /* SettlementCenterCell02.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell02.h; path = OnlineShop/SettlementCenterCell02.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFB815302561001ADA69 /* SettlementCenterCell02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell02.m; path = OnlineShop/SettlementCenterCell02.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFBA153025BA001ADA69 /* SettlementCenterCell10.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell10.h; path = OnlineShop/SettlementCenterCell10.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFBB153025BA001ADA69 /* SettlementCenterCell10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell10.m; path = OnlineShop/SettlementCenterCell10.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFBD153025C6001ADA69 /* SettlementCenterCell20.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SettlementCenterCell20.h; sourceTree = "<group>"; };
+		1FEEEFBE153025C6001ADA69 /* SettlementCenterCell20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementCenterCell20.m; sourceTree = "<group>"; };
+		1FEEEFC0153025D4001ADA69 /* SettlementCenterCell30.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell30.h; path = OnlineShop/SettlementCenterCell30.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC1153025D5001ADA69 /* SettlementCenterCell30.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell30.m; path = OnlineShop/SettlementCenterCell30.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFC3153025E3001ADA69 /* SettlementCenterCell31.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell31.h; path = OnlineShop/SettlementCenterCell31.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC4153025E3001ADA69 /* SettlementCenterCell31.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell31.m; path = OnlineShop/SettlementCenterCell31.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFC6153025F0001ADA69 /* SettlementCenterCell32.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell32.h; path = OnlineShop/SettlementCenterCell32.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC7153025F0001ADA69 /* SettlementCenterCell32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell32.m; path = OnlineShop/SettlementCenterCell32.m; sourceTree = SOURCE_ROOT; };
+		1FEEEFC91530260C001ADA69 /* SettlementCenterCell40.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell40.h; path = OnlineShop/SettlementCenterCell40.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFCA1530260C001ADA69 /* SettlementCenterCell40.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell40.m; path = OnlineShop/SettlementCenterCell40.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -821,12 +851,48 @@
 		1FE747E11527505700031C95 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				1FEEEFAB15301E2D001ADA69 /* SettlementCenter */,
 				1F7132A015297C8000172033 /* ProductDetail */,
 				1F71328D15295C1400172033 /* ColorfulCataList */,
 				1F0571E31528980C00BCE094 /* ImageList */,
 				1F0571E2152897EE00BCE094 /* GeneralInfo */,
 			);
 			name = detail;
+			sourceTree = "<group>";
+		};
+		1FEEEFAB15301E2D001ADA69 /* SettlementCenter */ = {
+			isa = PBXGroup;
+			children = (
+				1FEEEFB0153024E5001ADA69 /* cells */,
+				1FEEEFAD15301F0E001ADA69 /* SettlementCenterController.h */,
+				1FEEEFAE15301F0E001ADA69 /* SettlementCenterController.m */,
+			);
+			name = SettlementCenter;
+			sourceTree = "<group>";
+		};
+		1FEEEFB0153024E5001ADA69 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				1FEEEFB115302538001ADA69 /* SettlementCenterCell00.h */,
+				1FEEEFB215302538001ADA69 /* SettlementCenterCell00.m */,
+				1FEEEFB415302552001ADA69 /* SettlementCenterCell01.h */,
+				1FEEEFB515302552001ADA69 /* SettlementCenterCell01.m */,
+				1FEEEFB715302561001ADA69 /* SettlementCenterCell02.h */,
+				1FEEEFB815302561001ADA69 /* SettlementCenterCell02.m */,
+				1FEEEFBA153025BA001ADA69 /* SettlementCenterCell10.h */,
+				1FEEEFBB153025BA001ADA69 /* SettlementCenterCell10.m */,
+				1FEEEFBD153025C6001ADA69 /* SettlementCenterCell20.h */,
+				1FEEEFBE153025C6001ADA69 /* SettlementCenterCell20.m */,
+				1FEEEFC0153025D4001ADA69 /* SettlementCenterCell30.h */,
+				1FEEEFC1153025D5001ADA69 /* SettlementCenterCell30.m */,
+				1FEEEFC3153025E3001ADA69 /* SettlementCenterCell31.h */,
+				1FEEEFC4153025E3001ADA69 /* SettlementCenterCell31.m */,
+				1FEEEFC6153025F0001ADA69 /* SettlementCenterCell32.h */,
+				1FEEEFC7153025F0001ADA69 /* SettlementCenterCell32.m */,
+				1FEEEFC91530260C001ADA69 /* SettlementCenterCell40.h */,
+				1FEEEFCA1530260C001ADA69 /* SettlementCenterCell40.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -989,6 +1055,16 @@
 				1F08DE51152A9C8C00E382C7 /* ProductDetailLine6Cell.m in Sources */,
 				1F771877152C846800D90018 /* ProductShowScrollView.m in Sources */,
 				1FE486A0152D3E1C0045DA91 /* CommonLoginTableViewCell.m in Sources */,
+				1FEEEFAF15301F0E001ADA69 /* SettlementCenterController.m in Sources */,
+				1FEEEFB315302538001ADA69 /* SettlementCenterCell00.m in Sources */,
+				1FEEEFB615302552001ADA69 /* SettlementCenterCell01.m in Sources */,
+				1FEEEFB915302561001ADA69 /* SettlementCenterCell02.m in Sources */,
+				1FEEEFBC153025BB001ADA69 /* SettlementCenterCell10.m in Sources */,
+				1FEEEFBF153025C7001ADA69 /* SettlementCenterCell20.m in Sources */,
+				1FEEEFC2153025D5001ADA69 /* SettlementCenterCell30.m in Sources */,
+				1FEEEFC5153025E4001ADA69 /* SettlementCenterCell31.m in Sources */,
+				1FEEEFC8153025F0001ADA69 /* SettlementCenterCell32.m in Sources */,
+				1FEEEFCB1530260D001ADA69 /* SettlementCenterCell40.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

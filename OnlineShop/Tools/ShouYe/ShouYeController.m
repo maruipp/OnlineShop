@@ -35,7 +35,7 @@
         [detailScrollView setImages:arr];
         [self.view bringSubviewToFront:detailScrollView];
         
-        detailTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 367) style:UITableViewStylePlain];
+        detailTableView = [[UITableView alloc] initWithFrame:RECT_TABBAR_NAVIGATIONBAR_STATUS style:UITableViewStylePlain];
         detailTableView.dataSource = self;
         detailTableView.delegate = self;
         [self.view addSubview:detailTableView];
