@@ -62,9 +62,21 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self initTabBarController];
+    [self initDefaulValues];
     return YES;
 }
 
+#pragma mark - 
+- (void)initDefaulValues
+{
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:PAYMENT_ID_KEY]) {
+        [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:PAYMENT_ID_KEY];
+    }
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:DELIVERY_TIME_ID_KEY]) {
+        [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:DELIVERY_TIME_ID_KEY];
+    }
+}
 #pragma mark - init notification center
 - (void) addNotificationToCenter
 {
@@ -120,7 +132,7 @@
     [UIView commitAnimations]; 
 }
 
-
+#pragma mark -
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*

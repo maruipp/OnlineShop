@@ -28,12 +28,31 @@
 #define CURRENT_MESSAGE_ID_KEY @"CURRENT_MESSAGE_ID_KEY"
 //要转到的controller的title的key
 #define CURRENT_CONTROLLER_TITLE_KEY @"CURRENT_CONTROLLER_TITLE_KEY"
+
+//付款方式key
+#define PAYMENT_ID_KEY @"GLOBAL_PAYMENT_ID_KEY"
+
+//付款方式（选项）
+#define PAYMENT_ARRAY [NSMutableArray arrayWithObjects:@"现金支付（货到付款）",@"pos机刷卡（货到付款）",@"支付宝",nil]
+//付款方式更新后发出消息通知父controller刷新
+#define NOTIFICATION_REFRESH_PAYMENT @"NOTIFICATION_REFRESH_PAYMENT"
+
+
+//送货时间key
+#define DELIVERY_TIME_ID_KEY @"DELIVERY_TIME_ID_KEY"
+//送货时间（选项）
+#define DELIVERY_TIME_ARRAY [NSMutableArray arrayWithObjects:@"工作日、双休日与假日均可送货",@"只双休日、假日送货（工作日不用送）",@"只工作日送货（双休日、假日不用送）\n（注：写字楼／商用地址客户请选择）",@"学校地址／地址白天没人，请尽量安排其它时间送货（注：特别安排可能超出预计送货天数）",nil]
+//送货时间更新后发出消息通知父controller刷新
+#define NOTIFICATION_REFRESH_DELIVERY_TIME @"NOTIFICATION_REFRESH_DELIVERY_TIME"
+
+
 //获取用户名
 #define USERNAME   [[NSUserDefaults standardUserDefaults] objectForKey:USERNAME_KEY]
 //获取密码
 #define PASSWORD   [[NSUserDefaults standardUserDefaults] objectForKey:PASSWORD_KEY]
 //获取私有key
 #define PRIVATEKEY [[NSUserDefaults standardUserDefaults] objectForKey:PRIVATEKEY_KEY]
+
 
 //导航栏button
 #define BARBUTTON(TITLE, SELECTOR) [[[UIBarButtonItem alloc] initWithTitle:TITLE style:UIBarButtonItemStyleBordered target:self action:SELECTOR] autorelease]

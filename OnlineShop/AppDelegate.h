@@ -22,4 +22,5 @@
 
 - (void)initProgressHD;
 - (void)hiddenProgress;
+- (void)initDefaulValues;
 @end

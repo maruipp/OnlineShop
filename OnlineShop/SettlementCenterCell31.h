@@ -7,7 +7,17 @@
 //
 
 #import "TGTableViewCell.h"
-
+#import "ImageButton.h"
 @interface SettlementCenterCell31 : TGTableViewCell
-
+{
+    ImageButton * imageBtn;
+    TGLabel * label00;
+    TGLabel * label11;
+    TGLabel * label13;
+    TGLabel * label21;
+    TGLabel * label31;
+    TGLabel * label33;
+    //TGLabel 
+}
+@property (nonatomic,retain) NSDictionary * dataDic;
 @end

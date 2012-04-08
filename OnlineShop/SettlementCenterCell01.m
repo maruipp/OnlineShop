@@ -43,6 +43,8 @@
         label11.alpha = alpha;
         
         label11.textColor = [UIColor blueColor];
+        
+        
     }
     return self;
 }
@@ -55,6 +57,13 @@
         
     }
     _dataDic = [dataDic retain];
-    label11.text = @"现金支付（或到付款）";
+    NSInteger index = [[NSUserDefaults standardUserDefaults] integerForKey:PAYMENT_ID_KEY];
+    if (index < [PAYMENT_ARRAY count]) {
+        label11.text = [PAYMENT_ARRAY objectAtIndex:index];
+    }
+    else {
+        label11.text = [PAYMENT_ARRAY objectAtIndex:0];
+    }
+    
 }
 @end

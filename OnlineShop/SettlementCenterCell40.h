@@ -9,5 +9,8 @@
 #import "TGTableViewCell.h"
 
 @interface SettlementCenterCell40 : TGTableViewCell
-
+{
+    TGLabel * label01;
+}
+@property (nonatomic,retain) NSMutableDictionary * dataDic;
 @end

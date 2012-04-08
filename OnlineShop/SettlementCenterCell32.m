@@ -57,7 +57,7 @@
         
         //line 4
         TGLabel * label40 = [[[TGLabel alloc] initWithFrame:CGRectMake(self.indentationLevel * self.indentationWidth, label30.frame.size.height + label30.frame.origin.y, 120, 20)] autorelease];
-        label30.text = @"您需要为订单支付";
+        label40.text = @"您需要为订单支付";
         [self addSubview:label40];
         
         label41 = [[[TGLabel alloc] initWithFrame:CGRectMake(self.indentationLevel * self.indentationWidth + label40.frame.size.width, label30.frame.size.height + label30.frame.origin.y, 320, 20)] autorelease];
@@ -100,7 +100,7 @@
     _dataDic = [dataDic retain];
     label11.text = @"马瑞鹏";
     label21.text = @"18610346075";
-    label31.text = @"北京交通大学";
+    label41.text = @"北京交通大学";
 }
 
 @end

@@ -56,7 +56,13 @@
         
     }
     _dataDic = [dataDic retain];
-    label11.text = @"工作日、双休日与假日均可送货";
+    NSInteger index = [[NSUserDefaults standardUserDefaults] integerForKey:DELIVERY_TIME_ID_KEY];
+    if (index < [DELIVERY_TIME_ARRAY count]) {
+        label11.text = [DELIVERY_TIME_ARRAY objectAtIndex:index];
+    }
+    else {
+        label11.text = [DELIVERY_TIME_ARRAY objectAtIndex:0];
+    }
 }
 
 @end

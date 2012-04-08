@@ -16,7 +16,7 @@
 
 - (void) dealloc
 {
-    
+    [[NSNotificationCenter defaultCenter] removeObserver:detailTableView];
     [detailTableView release];
     [super dealloc];
 }
@@ -25,16 +25,37 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.navigationItem.rightBarButtonItem = BARBUTTON(@"提交订单",@selector(commitOrder));
+        
         detailTableView = [[TGTableView alloc] initWithFrame:RECT_TABBAR_NAVIGATIONBAR_STATUS style:UITableViewStyleGrouped];
         detailTableView.dataSource = self;
         detailTableView.delegate = self;
         [self.view addSubview:detailTableView];
         
+        UIView * commitView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40)] autorelease];
+        TGButton * button = [TGButton buttonWithType:UIButtonTypeCustom];
+        int width = 180;
+        button.frame = CGRectMake(160 - width / 2, 5, width, 30);
+        [button setImage:[UIImage imageNamed:@"buyNow.png"] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(commitOrder) forControlEvents:UIControlEventTouchUpInside];
+        [commitView addSubview:button];
+        detailTableView.tableFooterView = commitView;
         
+        [[NSNotificationCenter defaultCenter] addObserver:detailTableView selector:@selector(reloadData) name:NOTIFICATION_REFRESH_PAYMENT object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:detailTableView selector:@selector(reloadData) name:NOTIFICATION_REFRESH_DELIVERY_TIME object:nil];
     }
     return self;
 }
 
+#pragma mark - 
+#pragma mark
+
+- (void)commitOrder
+{
+    
+}
+
+#pragma mark -
 - (void) readData:(int) index
 {
     if (!dataArray) {
@@ -101,15 +122,32 @@
     }
     return rows;
 }
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString * title =  nil;
+    
+    if (3 == section) {
+        title = @"商品明细：";
+    }
+    else if(4 == section){
+        title = @"您已享受到以下优惠：";
+    }
+    return title;
+}
 #pragma mark  tableview delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString * className = @"ChildCataController";
-    
-    [[NSUserDefaults standardUserDefaults] setObject:[dataArray objectAtIndex:indexPath.row] forKey:CURRENT_CONTROLLER_TITLE_KEY];
-    UIViewController * nextCtr = PAGECONTROLLER(className);//GenralInfoListController
-    //UIViewController * nextCtr = PAGECONTROLLER(@"ImageListController");
+    NSString * className = nil;
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        className = @"PaymentController";
+    }
+    else if (indexPath.section == 0 && indexPath.row == 2) {
+        className = @"DeliveryTimeController";
+    }
+//    [[NSUserDefaults standardUserDefaults] setObject:[dataArray objectAtIndex:indexPath.row] forKey:CURRENT_CONTROLLER_TITLE_KEY];
+    UIViewController * nextCtr = PAGECONTROLLER(className);//
     [self.navigationController pushViewController:nextCtr animated:YES];
 }
 
@@ -148,12 +186,15 @@
         }
         else if(1 == indexPath.row)
         {
-            height = 80;
+            height = 100;
         }
         else if(2 == indexPath.row)
         {
             height = 100;
         }
+    }
+    else if (4 == indexPath.section){
+        height = 30;
     }
     return height;
 }

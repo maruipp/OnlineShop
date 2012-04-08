@@ -85,6 +85,8 @@
 		1F08DE4A152A8AD500E382C7 /* TGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08DE49152A8AD500E382C7 /* TGButton.m */; };
 		1F08DE4E152A95D500E382C7 /* ProductDetailLine3Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08DE4D152A95D500E382C7 /* ProductDetailLine3Cell.m */; };
 		1F08DE51152A9C8C00E382C7 /* ProductDetailLine6Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08DE50152A9C8B00E382C7 /* ProductDetailLine6Cell.m */; };
+		1F39E495153201130064854D /* PaymentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F39E494153201130064854D /* PaymentController.m */; };
+		1F39E49915320ABD0064854D /* DeliveryTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F39E49815320ABD0064854D /* DeliveryTimeController.m */; };
 		1F71328815295BF100172033 /* ColorfulCataListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71328715295BF100172033 /* ColorfulCataListController.m */; };
 		1F71328C15295C0900172033 /* ColorfulCataListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71328B15295C0900172033 /* ColorfulCataListCell.m */; };
 		1F71329F1529692A00172033 /* ChildCataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71329E1529692A00172033 /* ChildCataController.m */; };
@@ -271,6 +273,10 @@
 		1F08DE4D152A95D500E382C7 /* ProductDetailLine3Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine3Cell.m; path = OnlineShop/ProductDetailLine3Cell.m; sourceTree = SOURCE_ROOT; };
 		1F08DE4F152A9C8B00E382C7 /* ProductDetailLine6Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailLine6Cell.h; path = OnlineShop/ProductDetailLine6Cell.h; sourceTree = SOURCE_ROOT; };
 		1F08DE50152A9C8B00E382C7 /* ProductDetailLine6Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailLine6Cell.m; path = OnlineShop/ProductDetailLine6Cell.m; sourceTree = SOURCE_ROOT; };
+		1F39E493153201130064854D /* PaymentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentController.h; path = OnlineShop/PaymentController.h; sourceTree = SOURCE_ROOT; };
+		1F39E494153201130064854D /* PaymentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentController.m; path = OnlineShop/PaymentController.m; sourceTree = SOURCE_ROOT; };
+		1F39E49715320ABD0064854D /* DeliveryTimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeliveryTimeController.h; path = OnlineShop/DeliveryTimeController.h; sourceTree = SOURCE_ROOT; };
+		1F39E49815320ABD0064854D /* DeliveryTimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeliveryTimeController.m; path = OnlineShop/DeliveryTimeController.m; sourceTree = SOURCE_ROOT; };
 		1F71328615295BF100172033 /* ColorfulCataListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorfulCataListController.h; path = OnlineShop/ColorfulCataListController.h; sourceTree = SOURCE_ROOT; };
 		1F71328715295BF100172033 /* ColorfulCataListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorfulCataListController.m; path = OnlineShop/ColorfulCataListController.m; sourceTree = SOURCE_ROOT; };
 		1F71328A15295C0900172033 /* ColorfulCataListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorfulCataListCell.h; path = OnlineShop/ColorfulCataListCell.h; sourceTree = SOURCE_ROOT; };
@@ -323,23 +329,23 @@
 		1FE747DE15274EDD00031C95 /* ZKQuickButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKQuickButtonView.m; sourceTree = "<group>"; };
 		1FEEEFAD15301F0E001ADA69 /* SettlementCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterController.h; path = OnlineShop/SettlementCenterController.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFAE15301F0E001ADA69 /* SettlementCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterController.m; path = OnlineShop/SettlementCenterController.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFB115302538001ADA69 /* SettlementCenterCell00.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell00.h; path = OnlineShop/SettlementCenterCell00.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFB115302538001ADA69 /* SettlementCenterCell00.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell00.h; path = OnlineShop/SettlementCenterCell00.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFB215302538001ADA69 /* SettlementCenterCell00.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell00.m; path = OnlineShop/SettlementCenterCell00.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFB415302552001ADA69 /* SettlementCenterCell01.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell01.h; path = OnlineShop/SettlementCenterCell01.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFB415302552001ADA69 /* SettlementCenterCell01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell01.h; path = OnlineShop/SettlementCenterCell01.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFB515302552001ADA69 /* SettlementCenterCell01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell01.m; path = OnlineShop/SettlementCenterCell01.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFB715302561001ADA69 /* SettlementCenterCell02.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell02.h; path = OnlineShop/SettlementCenterCell02.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFB715302561001ADA69 /* SettlementCenterCell02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell02.h; path = OnlineShop/SettlementCenterCell02.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFB815302561001ADA69 /* SettlementCenterCell02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell02.m; path = OnlineShop/SettlementCenterCell02.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFBA153025BA001ADA69 /* SettlementCenterCell10.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell10.h; path = OnlineShop/SettlementCenterCell10.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFBA153025BA001ADA69 /* SettlementCenterCell10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell10.h; path = OnlineShop/SettlementCenterCell10.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFBB153025BA001ADA69 /* SettlementCenterCell10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell10.m; path = OnlineShop/SettlementCenterCell10.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFBD153025C6001ADA69 /* SettlementCenterCell20.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SettlementCenterCell20.h; sourceTree = "<group>"; };
+		1FEEEFBD153025C6001ADA69 /* SettlementCenterCell20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettlementCenterCell20.h; sourceTree = "<group>"; };
 		1FEEEFBE153025C6001ADA69 /* SettlementCenterCell20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementCenterCell20.m; sourceTree = "<group>"; };
-		1FEEEFC0153025D4001ADA69 /* SettlementCenterCell30.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell30.h; path = OnlineShop/SettlementCenterCell30.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC0153025D4001ADA69 /* SettlementCenterCell30.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell30.h; path = OnlineShop/SettlementCenterCell30.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFC1153025D5001ADA69 /* SettlementCenterCell30.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell30.m; path = OnlineShop/SettlementCenterCell30.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFC3153025E3001ADA69 /* SettlementCenterCell31.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell31.h; path = OnlineShop/SettlementCenterCell31.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC3153025E3001ADA69 /* SettlementCenterCell31.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell31.h; path = OnlineShop/SettlementCenterCell31.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFC4153025E3001ADA69 /* SettlementCenterCell31.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell31.m; path = OnlineShop/SettlementCenterCell31.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFC6153025F0001ADA69 /* SettlementCenterCell32.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell32.h; path = OnlineShop/SettlementCenterCell32.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC6153025F0001ADA69 /* SettlementCenterCell32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell32.h; path = OnlineShop/SettlementCenterCell32.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFC7153025F0001ADA69 /* SettlementCenterCell32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell32.m; path = OnlineShop/SettlementCenterCell32.m; sourceTree = SOURCE_ROOT; };
-		1FEEEFC91530260C001ADA69 /* SettlementCenterCell40.h */ = {isa = PBXFileReference; fileEncoding = 4; name = SettlementCenterCell40.h; path = OnlineShop/SettlementCenterCell40.h; sourceTree = SOURCE_ROOT; };
+		1FEEEFC91530260C001ADA69 /* SettlementCenterCell40.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettlementCenterCell40.h; path = OnlineShop/SettlementCenterCell40.h; sourceTree = SOURCE_ROOT; };
 		1FEEEFCA1530260C001ADA69 /* SettlementCenterCell40.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettlementCenterCell40.m; path = OnlineShop/SettlementCenterCell40.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -779,6 +785,34 @@
 			name = ImageList;
 			sourceTree = "<group>";
 		};
+		1F39E490153200C70064854D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1FEEEFB0153024E5001ADA69 /* cells */,
+				1FEEEFAD15301F0E001ADA69 /* SettlementCenterController.h */,
+				1FEEEFAE15301F0E001ADA69 /* SettlementCenterController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		1F39E492153200E00064854D /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				1F39E493153201130064854D /* PaymentController.h */,
+				1F39E494153201130064854D /* PaymentController.m */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		1F39E49615320A710064854D /* Delivery time */ = {
+			isa = PBXGroup;
+			children = (
+				1F39E49715320ABD0064854D /* DeliveryTimeController.h */,
+				1F39E49815320ABD0064854D /* DeliveryTimeController.m */,
+			);
+			name = "Delivery time";
+			sourceTree = "<group>";
+		};
 		1F71328D15295C1400172033 /* ColorfulCataList */ = {
 			isa = PBXGroup;
 			children = (
@@ -863,9 +897,9 @@
 		1FEEEFAB15301E2D001ADA69 /* SettlementCenter */ = {
 			isa = PBXGroup;
 			children = (
-				1FEEEFB0153024E5001ADA69 /* cells */,
-				1FEEEFAD15301F0E001ADA69 /* SettlementCenterController.h */,
-				1FEEEFAE15301F0E001ADA69 /* SettlementCenterController.m */,
+				1F39E49615320A710064854D /* Delivery time */,
+				1F39E492153200E00064854D /* Payment */,
+				1F39E490153200C70064854D /* Home */,
 			);
 			name = SettlementCenter;
 			sourceTree = "<group>";
@@ -1065,6 +1099,8 @@
 				1FEEEFC5153025E4001ADA69 /* SettlementCenterCell31.m in Sources */,
 				1FEEEFC8153025F0001ADA69 /* SettlementCenterCell32.m in Sources */,
 				1FEEEFCB1530260D001ADA69 /* SettlementCenterCell40.m in Sources */,
+				1F39E495153201130064854D /* PaymentController.m in Sources */,
+				1F39E49915320ABD0064854D /* DeliveryTimeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
